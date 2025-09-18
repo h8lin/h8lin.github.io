@@ -8,68 +8,102 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CSS Measuring Units</title>
 
-    <!-- external and internal CSS -->
-    <link rel="stylesheet" href="styles.css" media="all">
-    <style>
-        textarea {
-            border: none;
-            padding: 5px;
-            background-color: rgb(149, 201, 154);
-            color: #D9534F;
-            text-decoration: rgb(255, 232, 105);
-        }
-       a {
-  		color: rgb(255, 154, 114); 
-       }
-       body {
-      background-color: rgb(212, 241, 255);
-    }
-    p {color:rgb(149, 201, 154);}
-    h1 {color:rgb(10, 88, 33)}
-    h2 {color: rgb(255, 162, 133);}
-    h3 {color: rgb(255, 162, 133);}
-    </style>
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+		textarea {
+			border: none;
+			padding: 5px;
+			background-color: rgb(149, 201, 154);
+			color: #D9534F;
+			text-decoration: rgb(255, 232, 105);
+		}
+
+		a {
+			color: rgb(255, 154, 114);
+		}
+
+		body {
+			background-color: rgb(212, 241, 255);
+		}
+
+		p {
+			color: rgb(149, 201, 154);
+		}
+
+		h1 {
+			color: rgb(10, 88, 33)
+		}
+
+		h2 {
+			color: rgb(255, 162, 133);
+		}
+
+		h3 {
+			color: rgb(255, 162, 133);
+		}
+	</style>
 
 </head>
 
 <body>
 
-    <h1>Code Log 2: CSS Measuring Units</h1>
-    <p>
-    <h2>Q: What is the difference between <em>absolute</em> and <em>relative</em> CSS length units?</h2>
-    CSS length units help define the size of different elements in your code. When you want to add an object to your code with a specific size, you will use length units to determine how big that object will be.  </p>
+	<h1>Code Log 2: CSS Measuring Units</h1>
+	<p>
+	<h2>Q: What is the difference between <em>absolute</em> and <em>relative</em> CSS length units?</h2>
+	CSS length units help define the size of different elements in your code. When you want to add an object to your
+	code with a specific size, you will use length units to determine how big that object will be. </p>
 	<p>For example:</p>
-    <p><textarea cols="100" rows="4"> <textarea cols="100" rows="5"> In this tag, “cols” determines the horizontal length that text area element will be, and “rows” determines the vertical length.</textarea>  
-    </textarea></p>
-    <p>Absolute CSS length units are units that do not depend on anything else in your code to determine the size. Comparably, one foot is equivalent to twelve inches in the same way that one cm as a CSS length unit is equal to 37.8px and 25.2/64 in.</p>
-	<p>Relative CSS length units then are relative to another element of the code. If you want to change the size of something by comparing it to the size of something else, you might use relative length units. For font size, em determines font size relative to the font size of the original font-size element.</p>
-    <p><textarea cols="100" rows="5"> <div>This tag represents a division in the page elements. Anything can be contained within it, including style, structure, and written content.</div>
+	<p><textarea cols="100"
+			rows="4"> <textarea cols="100" rows="5"> In this tag, “cols” determines the horizontal length that text area element will be, and “rows” determines the vertical length.</textarea>
+		</textarea></p>
+	<p>Absolute CSS length units are units that do not depend on anything else in your code to determine the size.
+		Comparably, one foot is equivalent to twelve inches in the same way that one cm as a CSS length unit is equal to
+		37.8px and 25.2/64 in.</p>
+	<p>Relative CSS length units then are relative to another element of the code. If you want to change the size of
+		something by comparing it to the size of something else, you might use relative length units. For font size, em
+		determines font size relative to the font size of the original font-size element.</p>
+	<p><textarea cols="100" rows="5"> <div>This tag represents a division in the page elements. Anything can be contained within it, including style, structure, and written content.</div>
 <div class="header">This addition creates meaning to this specific div tag, clarifying that it is a header.</div>
         </textarea>
-    </p>
-    <p>TLDR- semantic tags tell you what they will contain, non-semantic tags depend on the text within them to
-        determine what they will contain.</p>
-    <h2>Q: What are two (or more) benefits of using semantic tags?</h2>
-    <p>One benefit is being more clear and concise. Using the same kind of tag to do multiple different things can make
-        your code harder to understand and more difficult to search through for errors. This also applies with
-        transferring your code to different browsers, between different coders, and within different contexts. Semantic
-        tags are more versatile.
-    </p>
-    <p>Another benefit is better accessibility. Content that cannot be accessed by everyone is content that will not be
-        viewed by as many people. </p>
-       <p><h3>Sources</h3></p>
-    <p> <cite>
-            <p> <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">"HTML Semantic Elements" from W3
-                    Schools</a>
-            </p>
-            <p> <a href="https://www.browserstack.com/guide/html-semantic">"A Detailed Guide on HTML Semantics" by Mohit
-                    Joshi, BrowserStack Community Contributor</a></p>
-        </cite> </p>
+	</p>
+	<h2>Absolute CSS Length Unit: px</h2>
+	<p>px is the abbreviation for pixels, which are determined by the rough size that they would look on that specific
+		device. This is a common unit that translates well from device to device because it is implied that 1px will be
+		defined differently on a device with high resolution than on a low-resolution device. The px unit is relative to
+		device size and resolution, but not to the specific code.
+	</p>
+	<h2>Relative CSS Length Units: %, vmin, vmax</h2>
+	<p></p>
+	<p><textarea cols="100" rows="5"> When we add: 
+	li {
+  font-size: 95%;
+}
+Then when creating this list:
+	<li>
 
-        <footer>
-        <p> © Kaytlin Gross. DTC 355 Activity 5.
-      </p>
-    </footer>
+	<p>This line will have the largest font size of the list.</p> 
+
+		<p>This line will have font that is 95% as large as the previous line.</p> 
+
+			<p>Just like this line will have its font at 95% of the font from the line above it, and so on.</p>
+	</li>
+</textarea></p>
+	<p>
+	<h3>Sources</h3>
+	</p>
+	<p> <cite>
+			<p> <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">"HTML Semantic Elements" from W3
+					Schools</a>
+			</p>
+			<p> <a href="https://www.browserstack.com/guide/html-semantic">"A Detailed Guide on HTML Semantics" by Mohit
+					Joshi, BrowserStack Community Contributor</a></p>
+		</cite> </p>
+
+	<footer>
+		<p> © Kaytlin Gross. DTC 355 Activity 5.
+		</p>
+	</footer>
 
 </body>
 
