@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	
+
 	<!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CSS Measuring Units</title>
 
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-	<style>
-		/* in-file CSS here */
-	</style>
-
-	<!-- external and internal JavaScript -->
-	<script src="scripts.js" defer></script>
-	<script>
-		// in-page JavaScript here
-	</script>
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        textarea {
+            border: none;
+            padding: 5px;
+            background-color: rgb(255, 250, 221);
+            color: rgb(10, 88, 33);
+            text-decoration: rgb(34, 68, 40);
+        }
+       a {
+  color: rgb(29, 61, 32); 
+       }
+       body {
+      background-color: rgb(149, 201, 154);
+    }
+    p {color:rgb(119, 32, 80);}
+    h1 {color:rgb(10, 88, 33)}
+    h2 {color: rgb(123, 122, 172);}
+    h3 {color: rgb(151, 79, 136);}
+    </style>
 
 </head>
+
 <body>
 
-	<!-- HTML elements here -->
+    <h1>Code Log 1: HTML Semantic Tags</h1>
+    <p>
+    <h2>Q: What is the difference between non-semantic and semantic tags in HTML?</h2>
+    Semantic tags are clear about what is contained within them, such as:</p>
+    <p><textarea cols="100" rows="4"><footer>This tag clearly defines the content as being a page footer.</footer>
+<section>This tag groups the content within it, defining page sections like chapters, links, and definition lists. </section>
+         </textarea>
+    </p>
+    <p>Non-semantic tags suggest nothing about what can be contained within them, but they provide style and structure
+        for
+        the page layout. For example:</p>
+    <p><textarea cols="100" rows="5"> <div>This tag represents a division in the page elements. Anything can be contained within it, including style, structure, and written content.</div>
+<div class="header">This addition creates meaning to this specific div tag, clarifying that it is a header.</div>
+        </textarea>
+    </p>
+    <p>TLDR- semantic tags tell you what they will contain, non-semantic tags depend on the text within them to
+        determine what they will contain.</p>
+    <h2>Q: What are two (or more) benefits of using semantic tags?</h2>
+    <p>One benefit is being more clear and concise. Using the same kind of tag to do multiple different things can make
+        your code harder to understand and more difficult to search through for errors. This also applies with
+        transferring your code to different browsers, between different coders, and within different contexts. Semantic
+        tags are more versatile.
+    </p>
+    <p>Another benefit is better accessibility. Content that cannot be accessed by everyone is content that will not be
+        viewed by as many people. </p>
+       <p><h3>Sources</h3></p>
+    <p> <cite>
+            <p> <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">"HTML Semantic Elements" from W3
+                    Schools</a>
+            </p>
+            <p> <a href="https://www.browserstack.com/guide/html-semantic">"A Detailed Guide on HTML Semantics" by Mohit
+                    Joshi, BrowserStack Community Contributor</a></p>
+        </cite> </p>
+
+        <footer>
+        <p> © Kaytlin Gross. DTC 355 Activity 5.
+      </p>
+    </footer>
 
 </body>
+
 </html>
