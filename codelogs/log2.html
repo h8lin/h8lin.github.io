@@ -79,7 +79,9 @@
 		device size and resolution, but not to the specific code.
 	</p>
 	<h2>Relative CSS Length Units: %, vmin, vmax</h2>
-	<p></p>
+	<p>% uses the size of a parent element to determine the size of the child element. When using nested list items, each new layer of that list takes the size from the previous layer as its parent size. This makes the sizes of the list items get progressively smaller or larger depending on the percentage used.
+	</p>
+	<p>For example:</p>
 	<p><textarea cols="100" rows="15"> When we add: 
 	li {
 	font-size: 95%;
@@ -94,6 +96,22 @@ Then when creating this list:
 		<p>Just like this line will have its font at 95% of the font from the line above it, and so on.</p>
 </li>
 </textarea></p>
+<p>vmax and vmin are viewport units that change based on the browser used to view them. These units scale in size as the browser’s pixel height and width change. These values are based on which is smaller and larger between viewport width (vw) and height (vh), and vmin=1% of the smaller value, where vmax=1% of the larger value.
+</p>
+<p>For different browser sizes, this might look like:</p>
+<p><textarea cols="100" rows="12">
+vw=1000px and vh=10000px: 
+vmin=10px 
+vmax=100px 
+
+vw=10000px and vh=1000px 
+vmin=10px 
+vmax=100px 
+
+vw=9000px and vh=8800px 
+vmin=88px 
+vmax=90px 
+</textarea></p>
 	<p>
 	<h3>Sources</h3>
 	</p>
@@ -107,7 +125,7 @@ Then when creating this list:
 
 	<footer>
 		<p>
-		<h4> © Kaytlin Gross. DTC 355 Activity 5.
+		<h4> © Kaytlin Gross. DTC 355 Activity 6.
 		</h4>
 		</p>
 	</footer>
