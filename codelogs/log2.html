@@ -59,7 +59,7 @@
 		code with a specific size, you can use length units to determine how big that object will be.
 	</p>
 	<p>For example:</p>
-	<p><textarea cols="100" rows="3"> 
+	<p><textarea cols="100" rows="3">
 <textarea cols="100" rows="5"> In this tag, “cols” determines the horizontal length that text area element will be (100 columns), and “rows” determines the vertical length (5 rows).</textarea>
 		</textarea></p>
 	<p>Absolute CSS length units are units that do not depend on anything else in your code to determine the size.
@@ -72,7 +72,7 @@
 	<p>px is the abbreviation for pixels, which are determined by the rough size that they would look on that specific
 		device. This is a common unit that translates well from device to device because it is implied that 1px will be
 		defined differently on a device with high resolution than on a low-resolution device. The px unit is relative to
-		device size and resolution, but not to the specific code.
+		device size and resolution, but not to the other elements.
 	</p>
 	<h2>Relative CSS Length Units: <u>%, vmin, vmax</u></h2>
 	<p>% uses the size of a parent element to determine the size of the child element. When using nested list items,
@@ -91,12 +91,12 @@ Then when creating this list:
 
 	<p>This line will have font that is 95% as large as the previous line.</p> 
 
-		<p>Just like this line will have its font at 95% of the font from the line above it, and so on.</p>
+		<p>Just like this line will have its font at 95% of the font size from the line above it, and so on.</p>
 </li>
 </textarea></p>
 	<p>vmax and vmin are viewport units that change based on the browser used to view them. These units scale in size as
 		the browser’s pixel height and width change. These values are based on which is smaller and larger between
-		viewport width (vw) and height (vh), and vmin=1% of the smaller value, where vmax=1% of the larger value.
+		viewport width (vw) and height (vh), where vmin=1% of the smaller value, amd vmax=1% of the larger value.
 	</p>
 	<p>For different browser sizes, this might look like:</p>
 	<p><textarea cols="100" rows="12">
@@ -118,13 +118,12 @@ vmax=90px
 	<p> <cite>
 			<p> <a
 					href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units">"CSS
-					values and units" from MDN</a>
-			</p>
+					values and units" from MDN</a></p>
 			<p> <a href="https://www.w3schools.com/cssref/css_units.php">"CSS Units" by W3 Schools</a></p>
+			<p> <a href="https://www.sitepoint.com/css-viewport-units-quick-start/">"CSS Viewport Units: vh, vw, vmin,
+					and vmax"
+					by Asha Laxmi via sitepoint</a></p>
 		</cite> </p>
-	<p> <a href="https://www.sitepoint.com/css-viewport-units-quick-start/">"CSS Viewport Units: vh, vw, vmin, and vmax"
-			by Asha Laxmi via sitepoint</a></p>
-	</cite> </p>
 
 	<footer>
 		<p>
