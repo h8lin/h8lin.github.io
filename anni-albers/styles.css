@@ -21,19 +21,23 @@ p {
 }
 
 p.callout {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
     float: right;
     font-style: italic;
     text-align: right;
     padding-left: 2em
 }
 
-#row3 p {
-    margin-left: calc(100% * 1/6);
-}
+
 #row1 p,
-#title p
+#title p,
+#row3 p,
+#row4 p,
+#row6 p,
+#row8 p,
+#row10 p,
+#row11 p
 {
     width: 100%
 }
