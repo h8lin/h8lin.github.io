@@ -9,18 +9,18 @@ h1 {
 
 }
  
-h2 [
-    font-size: 0.75rem;
- ]
+h2 {
+    font-size: 2rem;
+}
 p {
     font-size: 1.2rem;
     line-height: 2.5rem;
 }
-p.callout [
+p.callout {
     font-size: 2rem;
     line-height: 2rem;
 
-]
+}
 #row1 p {
-    margin-left: calc(100% / 6);
+    margin-left: 10%;
 }
