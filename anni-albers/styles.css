@@ -42,6 +42,7 @@ p.callout {
     width: 100%
 }
 
-#secondlayout body {
-    column-count: 3
+#secondlayout p {
+    column-count: 2;
+    column-gap: 2rem
 }
