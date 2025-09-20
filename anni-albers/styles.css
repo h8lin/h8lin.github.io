@@ -1,27 +1,31 @@
 /*Styles for both Annie Albers layouts*/
 main {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1100px;  
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
 }
+
 h1 {
     font-size: 3rem;
 
 }
- 
+
 h2 {
     font-size: 2rem;
 }
+
 p {
     font-size: 1.2rem;
     line-height: 2.5rem;
 }
+
 p.callout {
     font-size: 2rem;
     line-height: 2rem;
     float: right;
 
 }
+
 #row1 p,
 #row3 p {
     margin-left: calc(100% * 1/6);
