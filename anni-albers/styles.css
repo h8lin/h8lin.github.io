@@ -19,6 +19,7 @@ p {
 p.callout {
     font-size: 2rem;
     line-height: 2rem;
+    float: right;
 
 }
 #row1 p,
