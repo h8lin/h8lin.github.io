@@ -21,6 +21,7 @@ p.callout {
     line-height: 2rem;
 
 }
-#row1 p {
+#row1 p,
+#row3 p {
     margin-left: 10%;
 }
