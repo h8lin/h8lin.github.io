@@ -41,3 +41,7 @@ p.callout {
 {
     width: 100%
 }
+
+body.secondlayout {
+    column-count: 3
+}
