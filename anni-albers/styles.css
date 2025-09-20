@@ -16,3 +16,11 @@ p {
     font-size: 1.2rem;
     line-height: 2.5rem;
 }
+p.callout [
+    font-size: 2rem;
+    line-height: 2rem;
+
+]
+#row1 p {
+    marin-left: calc(100% / 6)
+}
