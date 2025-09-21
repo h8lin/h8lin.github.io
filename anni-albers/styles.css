@@ -83,12 +83,15 @@ h3 {
     font-style: normal;
     
 }
-#wiki p {
-    float: right
+a{
+    font-style: italic; 
+    padding-right: 30px;
+    margin: 0
 }
-footer {
-    font-size: 1rem;
+footer p{
+    font-size: small;
     font-style: italics;
+    padding-top: 10px
 }
 
 
