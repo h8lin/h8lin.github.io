@@ -105,7 +105,8 @@ footer p{
     h2 {
         font-size: 1.2rem;
         font-weight:normal;
-        width: 36%
+        width: 100%;
+        column-count: 1
     }
     #row1 p,
     #title p,
