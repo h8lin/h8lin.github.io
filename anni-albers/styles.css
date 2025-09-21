@@ -17,18 +17,30 @@ h2 {
 p {
     font-size: 1.2rem;
     line-height: 2.5rem;
-    width: 50%
+    width: 40%
 }
 
 p.callout {
+    width: 50%;
     font-size: 2.5rem;
-    line-height: 2.2rem;
+    line-height: 3rem;
     float: right;
     font-style: italic;
     text-align: right;
-    padding-left: 2em
+    padding-left: 2em;
+    margin: 1em
 }
-
+#abouttext p {
+    width: 40%;
+    
+}
+#listtitle p {
+    text-align: right;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
 
 #row1 p,
 #title p,
@@ -42,7 +54,6 @@ p.callout {
     width: 100%
 }
 
-#secondlayout p {
-    column-count: 2;
-    column-gap: 2rem
+#secondlayout body {
+    column-count: 3
 }
