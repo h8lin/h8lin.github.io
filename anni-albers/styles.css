@@ -86,9 +86,13 @@ h3 {
 #wiki p {
     float: right
 }
+footer {
+    font-size: 1rem;
+    font-style: italics;
+}
 
 
-
+/* SECOND LAYOUT BEGINS HERE */
 
 #secondlayout p {
     column-count: 1;
@@ -148,6 +152,8 @@ h3 {
         width: 50%
     }
     footer {
-        margin-left:12%
+        margin-left:12%;
+        font-size:1.5rem;
+        font-style: normal
     }
 }
