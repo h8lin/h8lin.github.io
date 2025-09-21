@@ -59,6 +59,27 @@ p.callout {
     width: 100%
 }
 
-#secondlayout body {
-    column-count: 3
+#secondlayout p {
+    column-count: 1;
+    column-gap: 2rem
+}
+#secondlayout {
+    #row1 p,
+    #title p,
+    #row3 p,
+    #row4 p,
+    #row6 p,
+    #row8 p,
+    #row10 p,
+    #row11 p {
+    column-count: 1;
+        width: 45%;
+    }
+    p.callout {
+        width: 40%;
+        float: right;
+        text-align: right;
+        column-count: 1;
+        
+    }
 }
