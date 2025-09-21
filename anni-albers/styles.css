@@ -12,6 +12,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    padding-top: 20px
 }
 
 p {
@@ -42,27 +43,43 @@ p.callout {
 {
     width: 100%
 }
-#summary p {
-    width: 40%
+#summary {
+    width: 60%;
+    padding-top: 2.5rem
 }
 #abouttext ul {
     float: right;
-    width: 50%;
+    width: 40%;
     text-align: left;
     padding-left: 2em;
-    margin: 1em
+    margin: 1em;
+}
+li {
+    font-weight: bold;
+    font-size: 1.2rem;
+    
 }
 #listcallout {
     float: right;
     width: 100%;
-    font-size: 1rem;
-    font-style: italic
-    
+    font-size: 1.04rem;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.4rem
 }
 h4 {
     width: 100%;
-    text-align: right;
-    font-size: 1.2rem
+    text-align: left;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    padding-top: 0px
+}
+h3 {
+    font-size: 1.5rem;
+    padding-top: 2em
+}
+cite {
+    font-style: italic;  
 }
 
 
