@@ -30,22 +30,6 @@ p.callout {
     padding-left: 2em;
     margin: 1em
 }
-#abouttext p {
-    width: 40%;
-    
-}
-#listtitle p {
-    text-align: right;
-    width: 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    float: right;
-    
-}
-#list li {
-    float: right;
-    width: 50%;
-}
 
 #row1 p,
 #title p,
@@ -58,6 +42,20 @@ p.callout {
 {
     width: 100%
 }
+#summary p {
+    width: 40%
+}
+#list p {
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding-left: 2em;
+    margin: 1em
+}
+
+
+
+
 
 #secondlayout p {
     column-count: 1;
@@ -88,7 +86,7 @@ p.callout {
         font-size: 2.3rem
     }
     ul {
-        font-style: italic
+        font-style: italic;
         column-count: 1;
         width: 40%;
         float: right;
