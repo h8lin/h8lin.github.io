@@ -45,7 +45,7 @@ p.callout {
 #summary p {
     width: 40%
 }
-#list p {
+#abouttext ul {
     float: right;
     width: 50%;
     text-align: right;
