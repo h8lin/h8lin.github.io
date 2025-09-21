@@ -61,7 +61,7 @@ p.callout {
 
 #secondlayout p {
     column-count: 1;
-    column-gap: 2rem
+    column-gap: 2rem;
 }
 #secondlayout {
     h2 {
@@ -115,5 +115,7 @@ p.callout {
         padding-top: 22px;
         font-size: 1.2rem
     }
-
+    footer {
+        margin-left:12%
+    }
 }
