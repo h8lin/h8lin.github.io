@@ -64,6 +64,11 @@ p.callout {
     column-gap: 2rem
 }
 #secondlayout {
+    h2 {
+        font-size: 1.2rem;
+        font-weight:normal;
+        width: 36%
+    }
     #row1 p,
     #title p,
     #row3 p,
