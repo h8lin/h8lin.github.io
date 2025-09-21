@@ -39,7 +39,12 @@ p.callout {
     width: 100%;
     font-size: 1.5em;
     font-weight: bold;
+    float: right;
     
+}
+#list li {
+    float: right;
+    width: 50%;
 }
 
 #row1 p,
