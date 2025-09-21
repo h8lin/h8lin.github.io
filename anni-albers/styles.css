@@ -48,9 +48,21 @@ p.callout {
 #abouttext ul {
     float: right;
     width: 50%;
-    text-align: right;
+    text-align: left;
     padding-left: 2em;
     margin: 1em
+}
+#listcallout {
+    float: right;
+    width: 100%;
+    font-size: 1rem;
+    font-style: italic
+    
+}
+h4 {
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem
 }
 
 
