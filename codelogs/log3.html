@@ -132,7 +132,7 @@
     </p>
 
     <p>
-        <textarea columns="fit-content" rows="fit-content">To specify a design element based on minimum device width of 640px, the breakpoint would be: 
+        <textarea columns="fit-content" rows="3lh">To specify a design element based on minimum device width of 640px, the breakpoint would be: 
 @media (min-width: 640px) {/*CSS FOR DESIGN ELEMENT*/}
             </textarea>
     </p>
@@ -192,10 +192,32 @@ This might be useful for elements like textarea boxes that you want to be larger
     </p>
 
     <p>
-
+        The media feature "resolution" lets you adjust content based on device resolution. For devices with lower
+        resolution, you can make the font size larger, for example, to make sure that the text is not illegible.
     </p>
+<p>
+    <textarea>If the font size is set to 1rem as a default, then for devices with resolution at and under something like 100ppi, you can update that font size with:
+@media (max-resolution: 100ppi) {
+    font-size: 2rem
+}
+    </textarea>
+</p>
 
-
+<p>
+When looking to expand accessibility, you can also make changes based on device preferences/settings. One common setting is light and dark mode, where the user may prefer darker colors over brighter colors for a number of reasons. You can select your own color scheme based on this preference using CSS media queries. 
+</p>
+<p>
+    For example:
+</p>
+<p>
+    <textarea>@media (prefers-color-scheme: dark) {
+        body {
+            background-color: rgb(10, 88, 33);
+        }
+    }
+This will update the background color for the body section to a dark green color.  
+    </textarea>
+</p>
 </body>
 
 </html>
