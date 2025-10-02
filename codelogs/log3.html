@@ -11,12 +11,6 @@
     <!-- external and internal CSS -->
     <link rel="stylesheet" href="styles.css" media="all">
     <style>
-        text-area {
-            max-width: 100%;
-            max-height: fit-content;
-            font-style: italic;
-        }
-
         body {
             h1 {
                 font-size: 30px;
@@ -32,6 +26,12 @@
 
             p {
                 font-size: 16px;
+
+                text-area {
+                    max-width: 100%;
+                    max-height: fit-content;
+                    font-style: italic;
+                }
             }
         }
 
@@ -112,35 +112,33 @@
 
     <h1>CSS Media Queries</h1>
 
-    <section id="q1">
+    <h2>
+        How does a CSS media query work, and why is it useful?
+    </h2>
 
-        <h2>
-            How does a CSS media query work, and why is it useful?
-        </h2>
+    <p>
+        CSS media queries take information from a device, like screen orientation or media type, and use breakpoints
+        in your
+        CSS
+        code to make changes to design elements in response to that information. Once you add a media query
+        breakpoint, like device orientation, you can then specify a design element that will apply when the device
+        meets that condition.
+    </p>
 
-        <p>
-            CSS media queries take information from a device, like screen orientation or media type, and use breakpoints
-            in your
-            CSS
-            code to make changes to design elements in response to that information. Once you add a media query
-            breakpoint, like device orientation, you can then specify a design element that will apply when the device
-            meets that condition.
-        </p>
+    <p>
+        For example:
+    </p>
 
-        <p>
-            For example:
-        </p>
-
-        <p>
-            <textarea columns="fit-content" rows="fit-content">To specify a design element based on minimum device width of 640px, the breakpoint would be: 
+    <p>
+        <textarea columns="fit-content" rows="fit-content">To specify a design element based on minimum device width of 640px, the breakpoint would be: 
 @media (min-width: 640px) { /*CSS CODE FOR DESIGN ELEMENT*/}
             </textarea>
-        </p>
+    </p>
 
-        <p>
-            This is useful because your website design will have more compatibilty across more device types and sizes.
-            You can make your website more accessible, make it look more polished, and customize numerous elements.
-        </p>
+    <p>
+        This is useful because your website design will have more compatibilty across more device types and sizes.
+        You can make your website more accessible, make it look more polished, and customize numerous elements.
+    </p>
 
     </section>
 
