@@ -34,6 +34,9 @@
                     min-width: 20rem;
                     font-style: italic;
                 }
+                textarea.smaller {
+                    min-height: 3lh;
+                }
             }
         }
 
@@ -132,7 +135,7 @@
     </p>
 
     <p>
-        <textarea columns="fit-content" rows="3lh">To specify a design element based on minimum device width of 640px, the breakpoint would be: 
+        <textarea id="smaller">To specify a design element based on minimum device width of 640px, the breakpoint would be: 
 @media (min-width: 640px) {/*CSS FOR DESIGN ELEMENT*/}
             </textarea>
     </p>
@@ -164,11 +167,13 @@
 
     <p>
         <textarea>According to Alex Ivanovs via Stackdiary, the most popular breakpoints for minimum width are: 
-640px: @media (min-width: 640px) {...} 
+
+            640px: @media (min-width: 640px) {...} 
 768px: @media (min-width: 768px) {...}
 1024px: @media (min-width: 1024px) {...}
 1280px: @media (min-width: 1280px) {...} 
 1536px: @media (min-width: 1536px) {...}
+
 These values provide a good range for the more popular handheld devices, laptops, and desktops. 
             </textarea>
     </p>
@@ -181,12 +186,15 @@ These values provide a good range for the more popular handheld devices, laptops
     </p>
     <p>
         <textarea>To change the maximum width of the content on screen based on device orientation, you could do:
+           
 @media (orientation: portrait) {
     max-width: 500px
 }
+
 @media (orientation: landscape) {
     max-width: 1000px
 }
+
 This might be useful for elements like textarea boxes that you want to be larger in one orientation than the other. 
             </textarea>
     </p>
@@ -195,29 +203,51 @@ This might be useful for elements like textarea boxes that you want to be larger
         The media feature "resolution" lets you adjust content based on device resolution. For devices with lower
         resolution, you can make the font size larger, for example, to make sure that the text is not illegible.
     </p>
-<p>
-    <textarea>If the font size is set to 1rem as a default, then for devices with resolution at and under something like 100ppi, you can update that font size with:
+    <p>
+        <textarea>If the font size is set to 1rem as a default, then for devices with resolution at and under something like 100ppi, you can update that font size with:
+
 @media (max-resolution: 100ppi) {
     font-size: 2rem
 }
     </textarea>
-</p>
+    </p>
 
-<p>
-When looking to expand accessibility, you can also make changes based on device preferences/settings. One common setting is light and dark mode, where the user may prefer darker colors over brighter colors for a number of reasons. You can select your own color scheme based on this preference using CSS media queries. 
-</p>
-<p>
-    For example:
-</p>
-<p>
-    <textarea>@media (prefers-color-scheme: dark) {
-        body {
-            background-color: rgb(10, 88, 33);
-        }
+    <p>
+        When looking to expand accessibility, you can also make changes based on device preferences/settings. One common
+        setting is light and dark mode, where the user may prefer darker colors over brighter colors for a number of
+        reasons. You can select your own color scheme based on this preference using CSS media queries.
+    </p>
+    <p>
+        For example:
+    </p>
+    <p>
+        <textarea>@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(10, 88, 33);
     }
+}
 This will update the background color for the body section to a dark green color.  
     </textarea>
-</p>
+    </p>
+
+    <p>
+    <h3>Sources</h3>
+    </p>
+    <p> <cite>
+            <p> <a href="https://stackdiary.com/css-media-queries/">"A Practical Guide to CSS Media Queries" by Alex
+                    Ivanovs via Stackdiary</a></p>
+            <p> <a href="https://wsu.instructure.com/courses/1847549/files/138410691?wrap=1">"Lesson 23: Responsive
+                    Design" by Tor de Vries via Panopto/Canvas for WSU</a></p>
+    </p>
+    </cite> </p>
+
+    <footer>
+        <p>
+        <h4> © Kaytlin Gross. DTC 355 Activity 12.
+        </h4>
+        </p>
+    </footer>
+
 </body>
 
 </html>
