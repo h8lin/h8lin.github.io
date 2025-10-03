@@ -34,10 +34,10 @@ img {
 }
 
 img[src="rhododendron.png"] {
-  position: absolute;
-  top: 1%;
-  right: 1%;
-  width: 15%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 1rem;
 }
 
 /*Default CSS Ends Here*/
@@ -60,6 +60,10 @@ img[src="rhododendron.png"] {
     p {
         font-size: 1rem;
     }
+
+    img[src="rhododendron.png"] {
+        width: 2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones) */
@@ -78,6 +82,9 @@ img[src="rhododendron.png"] {
 
     p {
         font-size: 1rem;
+    }
+        img[src="rhododendron.png"] {
+        width: 2rem;
     }
 }
 
@@ -99,6 +106,9 @@ img[src="rhododendron.png"] {
     p {
         font-size: 1.5rem;
     }
+        img[src="rhododendron.png"] {
+        width: 2.5rem;
+    }
 }
 
 /* Large devices (my phone used to test fits here) */
@@ -119,6 +129,9 @@ img[src="rhododendron.png"] {
     p {
         font-size: 2rem;
     }
+        img[src="rhododendron.png"] {
+        width: 3rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops) */
@@ -138,5 +151,8 @@ img[src="rhododendron.png"] {
 
     p {
         font-size: 2.5rem;
+    }
+        img[src="rhododendron.png"] {
+        width: 3.5rem;
     }
 }
