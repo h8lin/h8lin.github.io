@@ -4,110 +4,89 @@
 
 /*Default CSS*/
 body {
-    background-color:rgb(237, 190, 228);
+    background-color: rgb(237, 190, 228);
 }
-    h1 {
-        color: rgb(63, 0, 19);
-        font-size: 30px;
-    }
-    h2 {
-        color:rgb(234, 120, 91);
-        font-style: italic;
-        font-size: 16px;
-    }
-    h3 {
-        color:rgb(95, 84, 32);
-        font-size: 24px;
-    }
-    p {
-        color: ;
-        font-size: 16px;
-    }
-    
+
+h1 {
+    color: rgb(63, 0, 19);
+    font-size: 30px;
+}
+
+h2 {
+    color: rgb(234, 120, 91);
+    font-style: italic;
+    font-size: 16px;
+}
+
+h3 {
+    color: rgb(95, 84, 32);
+    font-size: 24px;
+}
+
+p {
+    color: rgb(131, 55, 121);
+    font-size: 16px;
+}
+
 
 img {
     max-width: 100%;
-} 
+}
 
 /*Default CSS Ends Here*/
 
 /*Mobile Phone CSS, structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 640px) {
-h1 {
-    font-size: 0.8rem;
-}
-h2 {
-    font-size: 0.8rem;
-}
-h3 {
-    font-size: 0.8rem;
-}
-p {
-    font-size: 0.8rem;
-}
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 0.8rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 768px) {
-h1 {
-    font-size: 1rem;
-}
-h2 {
-    font-size: 1rem;
-}
-h3 {
-    font-size: 1rem;
-}
-p {
-    font-size: 1rem;
-}
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 1rem;
+    }
 }
 
 /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 1024px) {
-h1 {
-    font-size: 1.5rem;
-}
-h2 {
-    font-size: 1.5rem;
-}
-h3 {
-    font-size: 1.5rem;
-}
-p {
-    font-size: 1.5rem;
-}
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 /* Large devices (my phone used to test fits here) */
 @media only screen and (min-width: 1280px) {
-h1 {
-    font-size: 2rem;
-}
-h2 {
-    font-size: 2rem;
-}
-h3 {
-    font-size: 2rem;
-}
-p {
-    font-size: 2rem;
-}
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 2rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1536px) {
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 3rem;
-}
-h3 {
-    font-size: 3rem;
-}
-p {
-    font-size: 3rem;
-}
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 3rem;
+    }
 }
