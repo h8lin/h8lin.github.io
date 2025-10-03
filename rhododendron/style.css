@@ -36,12 +36,20 @@ img {
 /*Default CSS Ends Here*/
 
 /*Mobile Phone CSS, structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
-/* Extra small devices (smaller phones) */
+/* Extra small devices (smaller) */
 @media only screen and (min-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-    h1,
-    h2,
-    h3,
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
     p {
         font-size: 1rem;
     }
@@ -49,44 +57,71 @@ img {
 
 /* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-    h1,
-    h2,
-    h3,
-    p {
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
         font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
 
 /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 1024px) {
 
-    h1,
-    h2,
-    h3,
-    p {
+    h1 {
+       font-size: 2.5rem; 
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
         font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
     }
 }
 
 /* Large devices (my phone used to test fits here) */
 @media only screen and (min-width: 1280px) {
 
-    h1,
-    h2,
-    h3,
-    p {
+    h1 {
+       font-size: 3rem; 
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
         font-size: 2.5rem;
+    }
+    p {
+        font-size: 2rem;
     }
 }
 
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1536px) {
 
-    h1,
-    h2,
-    h3,
-    p {
+    h1 {
+       font-size: 3.5rem; 
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
         font-size: 3rem;
     }
+    p {
+        font-size: 2.5rem;
+    }
+}
 }
