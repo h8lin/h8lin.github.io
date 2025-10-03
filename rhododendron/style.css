@@ -49,7 +49,7 @@ img[src="rhododendron.png"] {
     top: 1.3rem;
     right: 1rem;
 }
-cite {
+a {
     color: rgb(238, 121, 156);
 
 }
@@ -63,7 +63,7 @@ cite {
         font-size: 2rem;
     }
 
-    h2, p, cite {
+    h2, p, a {
         font-size: 1rem;
     }
 
@@ -86,7 +86,7 @@ cite {
         font-size: 2rem;
     }
 
-    h2, p, cite {
+    h2, p, a {
         font-size: 1rem;
     }
 
@@ -110,7 +110,7 @@ cite {
         font-size: 2.5rem;
     }
 
-    h2, p, cite {
+    h2, p, a {
         font-size: 1.5rem;
     }
 
@@ -134,7 +134,7 @@ cite {
         font-size: 3rem;
     }
 
-    h2, p, cite {
+    h2, p, a {
         font-size: 2rem;
     }
 
@@ -158,7 +158,7 @@ cite {
         font-size: 3.5rem;
     }
 
-    h2, p, cite {
+    h2, p, a {
         font-size: 2.5rem;
     }
 
