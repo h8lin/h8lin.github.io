@@ -3,7 +3,7 @@
 .grid {
   display: grid;
       grid-template-columns: (0.5%, 33%, 33%, 33%, 0.5%);
-  gap: 20px;
+  gap: 0px;
 }
 
 /*Background CSS*/
