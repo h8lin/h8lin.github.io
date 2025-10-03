@@ -22,8 +22,15 @@ header {
 }
 
 .GM1 {
+    grid-column: 3;
+}
+
+.brewbooks-img {
     grid-column: 2;
-    padding: 20px;
+}
+
+.quinet-img {
+    grid-column: 2;
 }
 
 .h4 {
@@ -44,7 +51,7 @@ header {
 
 .phys-feat {
     break-inside: avoid;
-    grid-column: 3;
+    grid-column: 2;
 }
 
 .cohab {
