@@ -1,16 +1,17 @@
 /*CSS for Rhododendron TP4*/
 
 
-    /*Background CSS*/
+/*Background CSS*/
 body {
     background-color: rgb(237, 190, 228);
     background-image: url('flower_icons.png');
-    background-repeat: repeat; /*Found property via W3Schools https://www.w3schools.com/css/css_background_repeat.asp*/
+    background-repeat: repeat;
+    /*Found property via W3Schools https://www.w3schools.com/css/css_background_repeat.asp*/
     background-size: 10%;
     column-count: 1;
 }
 
-    /*Sections CSS for Columns*/
+/*Sections CSS for Columns*/
 .page-header {
     column-count: 1;
 }
@@ -23,20 +24,24 @@ body {
     column-count: 1;
 }
 
-.alt-names {
+.alt-names, .habitat, .phys-feat, .cohab {
     column-count: 3;
+}
+
+.alt-names {
+    break-inside: avoid;
 }
 
 .habitat {
-    column-count: 3;
+    break-inside: avoid;
 }
 
 .phys-feat {
-    column-count: 3;
+    break-inside: avoid;
 }
 
 .cohab {
-    column-count: 3;
+    break-inside: avoid;
 }
 
 .sources {
@@ -47,7 +52,7 @@ body {
     column-count: 1;
 }
 
-    /*Default color and font size*/
+/*Default color and font size*/
 h1 {
     color: rgb(90, 1, 60);
     font-size: 30px;
@@ -87,7 +92,7 @@ footer {
     color: rgb(90, 1, 60);
 }
 
-    /*Image formatting and design*/
+/*Image formatting and design*/
 img {
     max-width: 100%;
     max-height: 600px;
@@ -102,9 +107,9 @@ img[src="rhododendron.png"] {
 
 /*Responsive design CSS*/
 
-    /*Structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+/*Structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
-    /* Extra small devices (smaller) */
+/* Extra small devices (smaller) */
 @media only screen and (min-width: 0px) {
     h1 {
         font-size: 2rem;
@@ -137,7 +142,7 @@ img[src="rhododendron.png"] {
     }
 }
 
-    /* Small devices (portrait tablets and large phones) */
+/* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -170,7 +175,7 @@ img[src="rhododendron.png"] {
     }
 }
 
-    /* Medium devices (landscape tablets) */
+/* Medium devices (landscape tablets) */
 @media only screen and (min-width: 1024px) {
 
     h1 {
@@ -205,7 +210,7 @@ img[src="rhododendron.png"] {
 
 }
 
-    /* Large devices (Desktops and laptops) */
+/* Large devices (Desktops and laptops) */
 @media only screen and (min-width: 1280px) {
 
     h1 {
@@ -240,7 +245,7 @@ img[src="rhododendron.png"] {
 
 }
 
-    /* Extra large devices (large laptops and desktops) */
+/* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1536px) {
 
     h1 {
