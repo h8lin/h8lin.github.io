@@ -1,10 +1,11 @@
 /*CSS for Rhododendron TP4*/
 
-body {
+
 
 /*Default CSS*/
-
+body {
     background-color:rgb(237, 190, 228);
+}
     h1 {
         color: rgb(63, 0, 19);
         font-size: 30px;
@@ -27,7 +28,7 @@ body {
 img {
     max-width: 100%;
 } 
-}
+
 /*Default CSS Ends Here*/
 
 /*Mobile Phone CSS, structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
