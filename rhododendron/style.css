@@ -6,7 +6,7 @@
 body {
     background-color: rgb(237, 190, 228);
     background-image: url('flower_icons.png');
-    background-repeat: repeat; 
+    background-repeat: repeat;
     background-size: 10%;
 }
 
@@ -51,13 +51,15 @@ img[src="rhododendron.png"] {
     right: 1rem;
     left: 97%;
 }
+
 a {
     color: rgb(238, 121, 156);
     margin-right: 1.5rem;
 
 }
+
 footer {
-    color:rgb(90, 1, 60);
+    color: rgb(90, 1, 60);
 }
 
 /*Default CSS Ends Here*/
@@ -69,8 +71,14 @@ footer {
         font-size: 2rem;
     }
 
-    h2, p, a, footer, li {
+    h2,
+    a,
+    li {
         font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem
     }
 
     h3 {
@@ -84,6 +92,10 @@ footer {
     img[src="rhododendron.png"] {
         width: 2rem;
     }
+
+    footer {
+        font-size: 0.8rem
+    }
 }
 
 /* Small devices (portrait tablets and large phones) */
@@ -92,7 +104,13 @@ footer {
         font-size: 2rem;
     }
 
-    h2, p, a, footer, li {
+    p {
+        font-size: 0.9rem
+    }
+
+    h2,
+    a,
+    li {
         font-size: 1rem;
     }
 
@@ -107,6 +125,10 @@ footer {
     img[src="rhododendron.png"] {
         width: 2.5rem;
     }
+
+    footer {
+        font-size: 0.8rem
+    }
 }
 
 /* Medium devices (landscape tablets) */
@@ -116,7 +138,13 @@ footer {
         font-size: 2.5rem;
     }
 
-    h2, p, a, footer, li {
+    p {
+        font-size: 1.4rem
+    }
+
+    h2,
+    a,
+    li {
         font-size: 1.5rem;
     }
 
@@ -131,6 +159,11 @@ footer {
     img[src="rhododendron.png"] {
         width: 3rem;
     }
+
+    footer {
+        font-size: 1rem
+    }
+
 }
 
 /* Large devices (Desktops and laptops) */
@@ -140,7 +173,13 @@ footer {
         font-size: 3rem;
     }
 
-    h2, p, a, footer, li {
+    p {
+        font-size: 1.9rem
+    }
+
+    h2,
+    a,
+    li {
         font-size: 2rem;
     }
 
@@ -155,6 +194,11 @@ footer {
     img[src="rhododendron.png"] {
         width: 3.5rem;
     }
+
+    footer {
+        font-size: 1.2rem
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops) */
@@ -164,7 +208,13 @@ footer {
         font-size: 3.5rem;
     }
 
-    h2, p, a, footer, li {
+    p {
+        font-size: 2.4rem
+    }
+
+    h2,
+    a,
+    li {
         font-size: 2.5rem;
     }
 
@@ -179,4 +229,9 @@ footer {
     img[src="rhododendron.png"] {
         width: 4rem;
     }
+
+    footer {
+        font-size: 1.5rem
+    }
+
 }
