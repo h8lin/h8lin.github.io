@@ -23,13 +23,17 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    color: rgb(238, 121, 156);
+}
+
 p {
     color: rgb(90, 1, 60);
     font-size: 16px;
 }
 
 ul {
-    color: rgb(95, 84, 32);
+    color: rgb(238, 121, 156);
 }
 
 
@@ -60,6 +64,10 @@ img[src="rhododendron.png"] {
         font-size: 1.5rem;
     }
 
+    h4 {
+        font-size: 1.75rem;
+    }
+
     p {
         font-size: 1rem;
     }
@@ -81,6 +89,10 @@ img[src="rhododendron.png"] {
 
     h3 {
         font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
     }
 
     p {
@@ -107,6 +119,10 @@ img[src="rhododendron.png"] {
         font-size: 2rem;
     }
 
+    h4 {
+        font-size: 2.25rem;
+    }
+
     p {
         font-size: 1.5rem;
     }
@@ -116,7 +132,7 @@ img[src="rhododendron.png"] {
     }
 }
 
-/* Large devices (my phone used to test fits here) */
+/* Large devices (Desktops and laptops) */
 @media only screen and (min-width: 1280px) {
 
     h1 {
@@ -129,6 +145,10 @@ img[src="rhododendron.png"] {
 
     h3 {
         font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2.75rem;
     }
 
     p {
@@ -153,6 +173,10 @@ img[src="rhododendron.png"] {
 
     h3 {
         font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 3.25rem;
     }
 
     p {
