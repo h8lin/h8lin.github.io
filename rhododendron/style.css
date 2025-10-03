@@ -15,6 +15,38 @@ body {
     column-count: 1;
 }
 
+.GM1 {
+    column-count: 1;
+}
+
+.h4 {
+    column-count: 1;
+}
+
+.alt-names {
+    column-count: 3;
+}
+
+.habitat {
+    column-count: 3;
+}
+
+.phys-feat {
+    column-count: 3;
+}
+
+.cohab {
+    column-count: 3;
+}
+
+.sources {
+    column-count: 1;
+}
+
+.footer {
+    column-count: 1;
+}
+
     /*Default color and font size*/
 h1 {
     color: rgb(90, 1, 60);
