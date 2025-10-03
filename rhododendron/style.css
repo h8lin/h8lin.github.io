@@ -39,15 +39,15 @@ img {
 
 img[src="rhododendron.png"] {
     position: absolute;
-    top: 1%;
-    right: 1%;
+    top: 1.3rem;
+    right: 1rem;
 }
 
 /*Default CSS Ends Here*/
 
 /*Mobile Phone CSS, structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /* Extra small devices (smaller) */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 0px) {
     h1 {
         font-size: 2rem;
     }
