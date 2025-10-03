@@ -18,4 +18,7 @@ body {
     }
     
 /*Default CSS Ends Here*/
+#GM1 img {
+    max-width: fit-content;
+} 
 }
