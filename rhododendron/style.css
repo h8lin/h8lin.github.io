@@ -130,7 +130,7 @@ img[src="rhododendron.png"] {
     }
 
     p {
-        font-size: clamp(0.9rem, 2.5vw, 2rem);
+        font-size: 0.9rem;
     }
 
     h3 {
@@ -157,7 +157,7 @@ img[src="rhododendron.png"] {
     }
 
     p {
-        font-size: clamp(0.9rem, 2.5vw, 2rem);
+        font-size: 0.9rem;
     }
 
     h2,
@@ -191,7 +191,7 @@ img[src="rhododendron.png"] {
     }
 
     p {
-        font-size: clamp(1.2rem, 2.5vw, 2rem);
+        font-size: 1.2rem;
     }
 
     h2,
@@ -226,7 +226,7 @@ img[src="rhododendron.png"] {
     }
 
     p {
-        font-size: clamp(1.2rem, 2.5vw, 2rem);
+        font-size: 1.4rem;
     }
 
     h2,
@@ -261,7 +261,7 @@ img[src="rhododendron.png"] {
     }
 
     p {
-        font-size: clamp(1.4rem, 2.5vw, 2rem);
+        font-size: 1.7rem;
     }
 
     h2,
