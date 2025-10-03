@@ -46,6 +46,10 @@ img[src="rhododendron.png"] {
     top: 1.3rem;
     right: 1rem;
 }
+cite {
+    color: rgb(238, 121, 156);
+
+}
 
 /*Default CSS Ends Here*/
 
@@ -56,7 +60,7 @@ img[src="rhododendron.png"] {
         font-size: 2rem;
     }
 
-    h2 {
+    h2, p, cite {
         font-size: 1rem;
     }
 
@@ -66,10 +70,6 @@ img[src="rhododendron.png"] {
 
     h4 {
         font-size: 1.75rem;
-    }
-
-    p {
-        font-size: 1rem;
     }
 
     img[src="rhododendron.png"] {
@@ -83,7 +83,7 @@ img[src="rhododendron.png"] {
         font-size: 2rem;
     }
 
-    h2 {
+    h2, p, cite {
         font-size: 1rem;
     }
 
@@ -93,10 +93,6 @@ img[src="rhododendron.png"] {
 
     h4 {
         font-size: 1.75rem;
-    }
-
-    p {
-        font-size: 1rem;
     }
 
     img[src="rhododendron.png"] {
@@ -111,7 +107,7 @@ img[src="rhododendron.png"] {
         font-size: 2.5rem;
     }
 
-    h2 {
+    h2, p, cite {
         font-size: 1.5rem;
     }
 
@@ -121,10 +117,6 @@ img[src="rhododendron.png"] {
 
     h4 {
         font-size: 2.25rem;
-    }
-
-    p {
-        font-size: 1.5rem;
     }
 
     img[src="rhododendron.png"] {
@@ -139,7 +131,7 @@ img[src="rhododendron.png"] {
         font-size: 3rem;
     }
 
-    h2 {
+    h2, p, cite {
         font-size: 2rem;
     }
 
@@ -149,10 +141,6 @@ img[src="rhododendron.png"] {
 
     h4 {
         font-size: 2.75rem;
-    }
-
-    p {
-        font-size: 2rem;
     }
 
     img[src="rhododendron.png"] {
@@ -167,7 +155,7 @@ img[src="rhododendron.png"] {
         font-size: 3.5rem;
     }
 
-    h2 {
+    h2, p, cite {
         font-size: 2.5rem;
     }
 
@@ -177,10 +165,6 @@ img[src="rhododendron.png"] {
 
     h4 {
         font-size: 3.25rem;
-    }
-
-    p {
-        font-size: 2.5rem;
     }
 
     img[src="rhododendron.png"] {
