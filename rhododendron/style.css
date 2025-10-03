@@ -46,9 +46,10 @@ img {
 }
 
 img[src="rhododendron.png"] {
-    position: absolute;
+    position: sticky;
     top: 1.3rem;
     right: 1rem;
+    left: 97%;
 }
 a {
     color: rgb(238, 121, 156);
