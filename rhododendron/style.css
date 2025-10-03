@@ -1,16 +1,21 @@
 /*CSS for Rhododendron TP4*/
 
 body {
+
+/*Default CSS*/
+
     background-color:rgb(237, 190, 228);
     h1 {
-        color: rgb(63, 0, 19)
+        color: rgb(63, 0, 19);
     }
     h2 {
-        color:rgb(234, 120, 91)
+        color:rgb(234, 120, 91);
+        font-style: italic;
+        font-size: 16px
     }
     h3 {
-        color:rgb(95, 84, 32)
+        color:rgb(95, 84, 32);
     }
     
-
+/*Default CSS Ends Here*/
 }
