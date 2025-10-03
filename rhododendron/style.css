@@ -2,8 +2,8 @@
 
 .grid {
   display: grid;
-      grid-template-columns: (0.5%, 33%, 33%, 33%, 0.5%);
-  gap: 0px;
+      grid-template-columns: (0.5fr, 1fr, 1fr, 1fr, 0.5fr);
+  gap: 10px;
 }
 
 /*Background CSS*/
@@ -35,18 +35,22 @@ body {
 
 .alt-names {
     break-inside: avoid;
+    grid-column: 2;
 }
 
 .habitat {
     break-inside: avoid;
+    grid-column: 2;
 }
 
 .phys-feat {
     break-inside: avoid;
+    grid-column: 2;
 }
 
 .cohab {
     break-inside: avoid;
+    grid-column: 2;
 }
 
 .sources {
