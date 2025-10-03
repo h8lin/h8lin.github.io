@@ -5,9 +5,10 @@
 /*Default CSS*/
 body {
     background-color: rgb(237, 190, 228);
-    background-image: url('flower icons.png');
+    background-image: url('flower-8026909.svg');
     background-repeat: repeat;
     background-size: 10%;
+    color: white;
 }
 
 h1 {
