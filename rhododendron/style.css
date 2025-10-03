@@ -1,5 +1,10 @@
 /*CSS for Rhododendron TP4*/
 
+.grid {
+  display: grid;
+      grid-template-columns: (0.5%, 33%, 33%, 33%, 0.5%);
+  gap: 20px;
+}
 
 /*Background CSS*/
 body {
@@ -25,7 +30,7 @@ body {
 }
 
 .alt-names, .habitat, .phys-feat, .cohab {
-    column-count: 3;
+    column-count: ;
 }
 
 .alt-names {
