@@ -33,6 +33,13 @@ img {
     max-width: 100%;
 }
 
+img[src="rhododendron.png"] {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 15%;
+}
+
 /*Default CSS Ends Here*/
 
 /*Mobile Phone CSS, structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
@@ -78,14 +85,17 @@ img {
 @media only screen and (min-width: 1024px) {
 
     h1 {
-       font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
+
     h2 {
         font-size: 1.5rem;
     }
+
     h3 {
         font-size: 2rem;
     }
+
     p {
         font-size: 1.5rem;
     }
@@ -95,14 +105,17 @@ img {
 @media only screen and (min-width: 1280px) {
 
     h1 {
-       font-size: 3rem; 
+        font-size: 3rem;
     }
+
     h2 {
         font-size: 2rem;
     }
+
     h3 {
         font-size: 2.5rem;
     }
+
     p {
         font-size: 2rem;
     }
@@ -112,16 +125,18 @@ img {
 @media only screen and (min-width: 1536px) {
 
     h1 {
-       font-size: 3.5rem; 
+        font-size: 3.5rem;
     }
+
     h2 {
         font-size: 2.5rem;
     }
+
     h3 {
         font-size: 3rem;
     }
+
     p {
         font-size: 2.5rem;
     }
-}
 }
