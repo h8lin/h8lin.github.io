@@ -41,7 +41,6 @@ img[src="rhododendron.png"] {
     position: absolute;
     top: 1%;
     right: 1%;
-    width: 1rem;
 }
 
 /*Default CSS Ends Here*/
@@ -66,7 +65,7 @@ img[src="rhododendron.png"] {
     }
 
     img[src="rhododendron.png"] {
-        width: 2rem;
+        width: 3rem;
     }
 }
 
@@ -88,7 +87,7 @@ img[src="rhododendron.png"] {
         font-size: 1rem;
     }
         img[src="rhododendron.png"] {
-        width: 2rem;
+        width: 3rem;
     }
 }
 
@@ -111,7 +110,7 @@ img[src="rhododendron.png"] {
         font-size: 1.5rem;
     }
         img[src="rhododendron.png"] {
-        width: 2.5rem;
+        width: 3.5rem;
     }
 }
 
@@ -134,7 +133,7 @@ img[src="rhododendron.png"] {
         font-size: 2rem;
     }
         img[src="rhododendron.png"] {
-        width: 3rem;
+        width: 4rem;
     }
 }
 
@@ -157,6 +156,6 @@ img[src="rhododendron.png"] {
         font-size: 2.5rem;
     }
         img[src="rhododendron.png"] {
-        width: 3.5rem;
+        width: 4.5rem;
     }
 }
