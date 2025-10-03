@@ -1,8 +1,7 @@
 /*CSS for Rhododendron TP4*/
 
 
-
-/*Default CSS*/
+    /*Background CSS*/
 body {
     background-color: rgb(237, 190, 228);
     background-image: url('flower_icons.png');
@@ -11,9 +10,12 @@ body {
     column-count: 1;
 }
 
+    /*Sections CSS for Columns*/
 .page-header {
     column-count: 1;
 }
+
+    /*Default color and font size*/
 h1 {
     color: rgb(90, 1, 60);
     font-size: 30px;
@@ -43,7 +45,17 @@ ul {
     color: rgb(238, 121, 156);
 }
 
+a {
+    color: rgb(238, 121, 156);
+    margin-right: 1.5rem;
 
+}
+
+footer {
+    color: rgb(90, 1, 60);
+}
+
+    /*Image formatting and design*/
 img {
     max-width: 100%;
     max-height: 600px;
@@ -55,20 +67,12 @@ img[src="rhododendron.png"] {
     left: 97%;
 }
 
-a {
-    color: rgb(238, 121, 156);
-    margin-right: 1.5rem;
 
-}
+/*Responsive design CSS*/
 
-footer {
-    color: rgb(90, 1, 60);
-}
+    /*Structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
-/*Default CSS Ends Here*/
-
-/*Mobile Phone CSS, structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
-/* Extra small devices (smaller) */
+    /* Extra small devices (smaller) */
 @media only screen and (min-width: 0px) {
     h1 {
         font-size: 2rem;
@@ -101,7 +105,7 @@ footer {
     }
 }
 
-/* Small devices (portrait tablets and large phones) */
+    /* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -134,7 +138,7 @@ footer {
     }
 }
 
-/* Medium devices (landscape tablets) */
+    /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 1024px) {
 
     h1 {
@@ -169,7 +173,7 @@ footer {
 
 }
 
-/* Large devices (Desktops and laptops) */
+    /* Large devices (Desktops and laptops) */
 @media only screen and (min-width: 1280px) {
 
     h1 {
@@ -204,7 +208,7 @@ footer {
 
 }
 
-/* Extra large devices (large laptops and desktops) */
+    /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1536px) {
 
     h1 {
