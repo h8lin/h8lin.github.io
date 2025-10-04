@@ -166,11 +166,21 @@ img[src="rhododendron-hd.png"] {
     footer {
         font-size: 0.8rem;
     }
-
     .grid {
-        grid-template-columns: 1fr;
-    }
-
+    grid-template-columns: 1fr;
+  }
+  .alt-names,
+  .habitat,
+  .phys-feat,
+  .GM1,
+  .brewbooks-img,
+  .quinet-img,
+  .cohab,
+  .sources,
+  .logo2 {
+    grid-column: 1 !important; 
+    grid-row: auto !important;  
+  }
 }
 
 /* Small devices (portrait tablets and large phones) */
