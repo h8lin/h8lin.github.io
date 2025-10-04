@@ -117,8 +117,8 @@ img[src="rhododendron-hd.png"] {
     .cohab,
     .sources,
     .logo2 {
-        grid-column: 1 !important;
-        grid-row: auto !important;
+        grid-column: 1;
+        grid-row: auto;
     }
 }
 @media only screen and (min-width: 600px) {
