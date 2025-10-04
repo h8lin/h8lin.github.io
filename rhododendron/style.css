@@ -19,7 +19,6 @@ body {
 header {
     column-count: 1;
     padding: 20px;
-    break-inside: avoid;
 }
 
 .GM1 {
@@ -34,10 +33,6 @@ header {
 
 .quinet-img {
     grid-column: 2;
-}
-
-.h4 {
-    column-count: 2;
 }
 
 /*.alt-names, .habitat, .phys-feat, .cohab {} (saved for future ref) */
