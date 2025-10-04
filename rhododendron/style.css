@@ -16,7 +16,6 @@ img[src="rhododendron-hd.png"] {
     width: 100%;
     justify-self: center;
     align-self: center;
-    max-width: none;
 }
 /*Sections CSS for Columns*/
 
@@ -57,7 +56,7 @@ img[src="rhododendron-hd.png"] {
     grid-row: 4;
     justify-self: center;
     align-self: center;
-    text-align: center
+    text-align: center;
 }
 /*Default color and font size*/
 h1 {
