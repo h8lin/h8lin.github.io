@@ -83,6 +83,13 @@ h3 {
 h4 {
     color: rgb(238, 121, 156);
 }
+h5 {
+    color:rgb(95, 84, 32);
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
 p {
     color: rgb(90, 1, 60);
     font-size: 16px;
