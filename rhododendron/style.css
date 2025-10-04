@@ -34,7 +34,7 @@ header {
 }
 
 .h4 {
-    column-count: 2;
+    column-count: 2 ;
 }
 
 /*.alt-names, .habitat, .phys-feat, .cohab {} (saved for future ref) */
