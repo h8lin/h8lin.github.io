@@ -99,7 +99,7 @@ footer {
 /*Image formatting and design*/
 img {
     max-width: 100%;
-    max-height: 600px;
+    max-height: 350px;
 }
 img[src="rhododendron.png"] {
     position: sticky;
