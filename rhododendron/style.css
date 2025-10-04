@@ -130,6 +130,7 @@ img[src="rhododendron-hd.png"] {
     width: 100%;
     justify-self: center; 
     align-self: center;
+    max-width: none;
 
 }
 
@@ -301,6 +302,9 @@ img[src="rhododendron-hd.png"] {
 
     img[src="rhododendron.png"] {
         width: 4rem;
+    }
+    img[src="rhododendron-hd.png"] {
+        max-width: 70%;
     }
 
     footer {
