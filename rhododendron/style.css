@@ -34,19 +34,19 @@ header {
 }
 
 .h4 {
-    column-count: 1;
+    column-count: 2;
 }
 
 /*.alt-names, .habitat, .phys-feat, .cohab {} (saved for future ref) */
 
 .alt-names {
     break-inside: avoid;
-    grid-column: 1;
+    grid-column: 2;
 }
 
 .habitat {
     break-inside: avoid;
-    grid-column: 1;
+    grid-column: 2;
 }
 
 .phys-feat {
@@ -60,11 +60,11 @@ header {
 }
 
 .sources {
-    column-count: 1;
+    column-count: 2;
 }
 
 .footer {
-    column-count: 1;
+    column-count: 2;
 }
 
 /*Default color and font size*/
