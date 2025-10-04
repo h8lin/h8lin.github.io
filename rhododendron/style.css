@@ -126,7 +126,8 @@ img[src="rhododendron.png"] {
 
 img[src="rhododendron-hd.png"] {
     align-items: right;
-    height: 70%
+    height: 70%;
+    width: auto;
 }
 
 
