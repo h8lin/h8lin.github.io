@@ -94,6 +94,7 @@ img[src="rhododendron.png"] {
     position: sticky;
     top: 1.3rem;
     left: 97%;
+    max-width: 2.5rem
 }
 img[src="rhododendron-hd.png"] {
     width: 100%;
