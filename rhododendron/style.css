@@ -1,146 +1,113 @@
 /*CSS for Rhododendron TP4*/
-
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-
 /*Background CSS*/
 body {
     background-color: rgb(237, 190, 228);
     background-image: url('flower_icons.png');
-    background-repeat: repeat;
-    /*Found property via W3Schools https://www.w3schools.com/css/css_background_repeat.asp*/
+    background-repeat: repeat; /*Found property via W3Schools https://www.w3schools.com/css/css_background_repeat.asp*/
     background-size: 10%;
 }
-
 /*Sections CSS for Columns*/
-
 .GM1 {
     grid-column: 2;
     grid-row: 2;
 }
-
 .brewbooks-img {
     grid-column: 1;
     grid-row: 3;
 }
-
 .quinet-img {
     grid-column: 1;
 }
-
 /*.alt-names, .habitat, .phys-feat, .cohab {} (saved for future ref) */
-
 .alt-names {
     break-inside: avoid;
     grid-column: 1;
     grid-row: 1;
 }
-
 .habitat {
     break-inside: avoid;
     grid-column: 2;
     grid-row: 1;
-
 }
-
 .phys-feat {
     break-inside: avoid;
     grid-column: 1;
     grid-row: 2;
 }
-
 .cohab {
     break-inside: avoid;
     grid-column: 2;
     grid-row: 3;
 }
-
 .sources {
     grid-column: 1;
     grid-row: 4;
 }
-
 .logo2 {
     grid-column: 2;
     grid-row: 4;
     justify-self: center;
     align-self: center;
 }
-
 /*Default color and font size*/
 h1 {
     color: rgb(90, 1, 60);
     font-size: 30px;
 }
-
 h2 {
     color: rgb(238, 121, 156);
     font-style: italic;
     font-size: 16px;
 }
-
 h3 {
     color: rgb(95, 84, 32);
     font-size: 24px;
 }
-
 h4 {
     color: rgb(238, 121, 156);
 }
-
 p {
     color: rgb(90, 1, 60);
     font-size: 16px;
 }
-
 ul {
     color: rgb(238, 121, 156);
 }
-
 a {
     color: rgb(238, 121, 156);
     margin-right: 1.5rem;
-
 }
-
 footer {
     color: rgb(90, 1, 60);
 }
-
 /*Image formatting and design*/
 img {
     max-width: 100%;
     max-height: 600px;
 }
-
 img[src="rhododendron.png"] {
     position: sticky;
     top: 1.3rem;
     left: 97%;
 }
-
 img[src="rhododendron-hd.png"] {
     width: 100%;
     justify-self: center;
     align-self: center;
     max-width: none;
-
 }
-
-
-/*Responsive design CSS*/
-
-/*Structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+/*Responsive design CSS, Structure for device width breakpoints via https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
 /* Extra small devices (smaller) */
 @media only screen and (max-width: 1023.98px) {
     .grid {
         grid-template-columns: 1fr;
     }
-
     .alt-names,
     .habitat,
     .phys-feat,
@@ -158,88 +125,64 @@ img[src="rhododendron-hd.png"] {
     h1 {
         font-size: 2rem;
     }
-
     h2,
     a,
     li {
         font-size: 1rem;
     }
-
     p {
         font-size: 0.9rem;
     }
-
     h3 {
         font-size: 1.5rem;
     }
-
     h4 {
         font-size: 1.75rem;
     }
-
     img[src="rhododendron.png"] {
         width: 2rem;
     }
-
     footer {
         font-size: 0.8rem;
     }
 }
 
-/* Small devices (portrait tablets and large phones) */
-@media only screen and (min-width: 768px) {
-    img[src="rhododendron.png"] {
-        width: 2.5rem;
-    }
-}
-
 /*use two columns for landscape even when portrait has 1 column*/
 @media only screen and (orientation: landscape) and (max-width: 1023.98px) {
-
     .grid {
         grid-template-columns: 1fr 1fr;
     }
-
     .GM1 {
         grid-column: 2;
         grid-row: 2;
     }
-
     .brewbooks-img {
         grid-column: 1;
         grid-row: 3;
     }
-
     .quinet-img {
         grid-column: 1;
     }
-
     .alt-names {
         grid-column: 1;
         grid-row: 1;
     }
-
     .habitat {
         grid-column: 2;
         grid-row: 1;
-
     }
-
     .phys-feat {
         grid-column: 1;
         grid-row: 2;
     }
-
     .cohab {
         grid-column: 2;
         grid-row: 3;
     }
-
     .sources {
         grid-column: 1;
         grid-row: 4;
     }
-
     .logo2 {
         grid-column: 2;
         grid-row: 4;
@@ -247,112 +190,84 @@ img[src="rhododendron-hd.png"] {
         align-self: center;
     }
 }
-
 /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 1024px) {
-
     h1 {
         font-size: 2.5rem;
     }
-
     p {
         font-size: 1.2rem;
     }
-
     h2,
     a,
     li {
         font-size: 1.2rem;
     }
-
     h3 {
         font-size: 2rem;
     }
-
     h4 {
         font-size: 2.25rem;
     }
-
     img[src="rhododendron.png"] {
         width: 3rem;
     }
-
     footer {
         font-size: 1rem;
     }
-
 }
-
 /* Large devices (Desktops and laptops) */
 @media only screen and (min-width: 1280px) {
-
     h1 {
         font-size: 3rem;
     }
-
     p {
         font-size: 1.4rem;
     }
-
     h2,
     a,
     li {
         font-size: 1.4rem;
     }
-
     h3 {
         font-size: 2.5rem;
     }
-
     h4 {
         font-size: 2.75rem;
     }
-
     img[src="rhododendron.png"] {
         width: 3.5rem;
     }
-
     footer {
         font-size: 1.2rem;
     }
-
 }
-
 /* Extra large devices (large laptops and desktops) */
 @media only screen and (min-width: 1536px) {
-
     h1 {
         font-size: 3.5rem;
     }
-
     p {
         font-size: 1.7rem;
     }
-
     h2,
     a,
     li {
         font-size: 1.7rem;
     }
-
     h3 {
         font-size: 3rem;
     }
-
     h4 {
         font-size: 3.25rem;
     }
-
     img[src="rhododendron.png"] {
         width: 4rem;
     }
-
     img[src="rhododendron-hd.png"] {
         max-width: 70%;
     }
-
     footer {
         font-size: 1.2rem;
     }
-
 }
