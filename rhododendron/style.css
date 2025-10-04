@@ -166,6 +166,9 @@ img[src="rhododendron-hd.png"] {
     footer {
         font-size: 0.8rem;
     }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Small devices (portrait tablets and large phones) */
