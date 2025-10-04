@@ -61,6 +61,7 @@ img[src="rhododendron-hd.png"] {
     text-align: center;
 }
 /*Default color and font size*/
+
 h1 {
     color: rgb(90, 1, 60);
     font-size: 30px;
@@ -91,6 +92,7 @@ a {
 footer {
     color: rgb(90, 1, 60);
 }
+
 /*Image formatting and design*/
 img {
     max-width: 100%;
