@@ -128,6 +128,11 @@ img[src="rhododendron.png"] {
     left: 97%;
 }
 
+img[src="rhododendron-hd.png"] {
+    align-items: right;
+    height: 70%
+}
+
 
 /*Responsive design CSS*/
 
