@@ -46,6 +46,8 @@ img[src="rhododendron-hd.png"] {
 .brewbooks-img {
     grid-column: 1;
     grid-row: 3;
+    justify-self: center;
+    align-self: center;
 }
 .cohab {
     break-inside: avoid;
