@@ -29,6 +29,7 @@
             font-size: 130%;
             padding: 1.5rem
         }
+
         a span {
             border-top-color: #50b848;
             border-bottom-color: #feb07c;
@@ -50,9 +51,10 @@
         }
 
         h1 {
-            color: white;
+            color: hsl(0, 0%, 100%);
             font-size: 350%;
         }
+
         h1 span {
             background-color: #50b848;
             border-color: #b026ff;
@@ -81,7 +83,7 @@
             color: #50b848;
             font-size: 130%;
         }
-        
+
         h4 span {
             background-color: #fe9c02;
             border-color: #feb07c;
@@ -170,20 +172,54 @@ On the page, <h5>This text will have a dotted chartreuse border</h5> is shown be
 
     <h5><span>This text will have a dotted chartreuse border</span></h5>
 
+    <h2>
+        What color values does CSS accept?
+    </h2>
+
+    <p>
+        CSS can use multiple types of color values. In order to select the color for the elements define above, you can
+        use named colors, hexadecimal colors, RGB, HSL colors, and more. 
+    </p>
+
+    <p>
+        For example, this webpage uses:
+    </p>
+
+    <textarea>The named color "chartreuse" for the dotted border as described in the previous section. This looks like:
+h5 {
+    border-color: chartreuse;
+}</textarea>
+    <textarea>Multiple hexadecimal colors, as this author prefers the ease of hex codes, including the background color #feb07c. 
+body {
+    background-color: #feb07c;
+} </textarea>
+<textarea>The RGB value (16, 24, 36) for the background of these text area boxes, written as:
+textarea {
+    background-color: rgb(16, 24, 36);
+}
+</textarea>
+<textarea>The HSL ratio of (0, 0%, 100%) for the title font color, which looks like:
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+</textarea>
+
+
 
     <p>
     <h3> <span>Sources</span> </h3>
     </p>
-    <p> <cite> 
+    <p> <cite>
             <p> <a href="https://www.w3schools.com/css/css_border_color.asp"><span>"CSS
-                    Border Color" from W3Schools</span></a></p>
-            <p> <a href="https://www.w3schools.com/cssref/css_colors_legal.php"><span>"CSS Legal Color Values" by W3 Schools</span></a></p>
-         </cite> </p>
+                        Border Color" from W3Schools</span></a></p>
+            <p> <a href="https://www.w3schools.com/cssref/css_colors_legal.php"><span>"CSS Legal Color Values" by W3
+                        Schools</span></a></p>
+        </cite> </p>
 
     <footer>
         <p>
         <h4> <span> © Kaytlin Gross. DTC 355 Activity 6.
-        </span> </h4>
+            </span> </h4>
         </p>
     </footer>
 
