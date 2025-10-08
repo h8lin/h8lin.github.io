@@ -11,6 +11,11 @@
     <!-- external and internal CSS -->
     <link rel="stylesheet" href="styles.css" media="all">
     <style>
+        body {
+            background-color: #feb07c;
+            justify-content: center;
+        }
+        
         textarea {
             border: none;
             padding: 5px;
@@ -34,10 +39,6 @@
             background-color: rgb(16, 24, 36);
             border-color: whitesmoke;
             border-style: dashed;
-        }
-
-        body {
-            background-color: #feb07c;
         }
 
         p {
@@ -85,12 +86,15 @@
             border-color: whitesmoke;
             border-style: dotted;
         }
-
+        
         h5 {
-            border-color: chartreuse;
-            border-style: dotted;
             color: #b026ff;
             font-size: 100%;
+        }
+
+        h5 span{
+            border-color: chartreuse;
+            border-style: dotted;
             background-color: whitesmoke;
         }
     </style>
@@ -181,8 +185,8 @@ On the page, <h5>This text will have a dotted chartreuse border</h5> is shown be
         For example, this webpage uses:
     </p>
 
-    <textarea>The named color "chartreuse" for the dotted border as described in the previous section. This looks like:
-h5 {
+    <p>The named color "chartreuse" for the dotted border as described in the previous section. This looks like:</p>
+<textarea>h5 {
     border-color: chartreuse;
 }</textarea>
     <textarea>Multiple hexadecimal colors, as this author prefers the ease of hex codes, including the background color #feb07c. 
