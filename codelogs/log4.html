@@ -35,10 +35,12 @@
 
         h1 {
             color: white;
-            background-color:#543a8c;
             border-color: #fe9c02;
             border-style: dotted;
-            
+            border-width: content;
+        }
+        h1 span {
+            background-color: #543a8c;
         }
 
         h2 {
@@ -50,27 +52,32 @@
             background-color: #101824;
             border-color: whitesmoke;
             border-style: dashed;
+            border-width: content;
         }
+
         h4 {
             background-color: #fe9c02;
             color: #f2bb13;
             border-color: #4a9151;
             border-style: groove;
+            border-width: content;
         }
+
         h5 {
-        border-color: orange;
-        border-style: dotted;
-        color:#4a9151;
-        font-size: 16px;
-        background-color: whitesmoke;
-}
+            border-color: orange;
+            border-style: dotted;
+            color: #4a9151;
+            font-size: 16px;
+            background-color: whitesmoke;
+            border-width: content;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <h1>Code Log 4: CSS Color</h1>
+    <h1><span>Code Log 4: CSS Color</span></h1>
 
     <h2>
         What does the CSS property <em>color</em> do?
@@ -137,7 +144,7 @@ h1 {
 
 On the page, <h5>This text will have a dotted orange border</h5> is shown below.</textarea>
 
-<h5>This text will have a dotted orange border</h5>
+    <h5>This text will have a dotted orange border</h5>
 
 
     <p>
