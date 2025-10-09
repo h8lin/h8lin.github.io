@@ -15,7 +15,7 @@
             background-color: #feb07c;
             justify-content: center;
         }
-        
+
         textarea {
             border: none;
             padding: 5px;
@@ -86,16 +86,21 @@
             border-color: whitesmoke;
             border-style: dotted;
         }
-        
+
         h5 {
             color: #b026ff;
             font-size: 100%;
         }
 
-        h5 span{
+        h5 span {
             border-color: chartreuse;
             border-style: dotted;
             background-color: whitesmoke;
+        }
+
+        h6 {
+            color: #50b848;
+            font-size: 110%;
         }
     </style>
 
@@ -111,9 +116,9 @@
     <p>
         The property <em>color</em> changes the color of the text for the defined element.
     </p>
-    <p>
+    <h6>
         For example:
-    </p>
+    </h6>
     <textarea>To change the text color of your h1 header, you would add to your style sheet: 
 h1 {
     color: xxx;
@@ -131,9 +136,9 @@ and <footer>footers</footer>, to name a few. You would replace "h1" with "p", "c
         background, you would add that to the style specifications for the body of the webpage.
     </p>
 
-    <p>
+    <h6>
         For example:
-    </p>
+    </h6>
 
     <textarea>This would change the background color of the page:
 body {
@@ -159,9 +164,9 @@ h1 {
         element, and other design details can be changed along with the color to style this element's border.
     </p>
 
-    <p>
+    <h6>
         For example:
-    </p>
+    </h6>
 
     <textarea>h5 {
     border-color: chartreuse;
@@ -178,31 +183,44 @@ On the page, <h5>This text will have a dotted chartreuse border</h5> is shown be
 
     <p>
         CSS can use multiple types of color values. In order to select the color for the elements define above, you can
-        use named colors, hexadecimal colors, RGB, HSL colors, and more. 
+        use named colors, hexadecimal colors, RGB, HSL colors, and more.
     </p>
+
+    <h6>
+        For example, this webpage uses:
+    </h6>
 
     <p>
-        For example, this webpage uses:
+        The named color "chartreuse" for the dotted border described in the previous section. This looks like:
     </p>
 
-    <p>The named color "chartreuse" for the dotted border as described in the previous section. This looks like:</p>
-<textarea>h5 {
+    <textarea>h5 {
     border-color: chartreuse;
 }</textarea>
-    <textarea>Multiple hexadecimal colors, as this author prefers the ease of hex codes, including the background color #feb07c. 
-body {
+
+    <p>
+        Multiple hexadecimal colors, as this author prefers the ease of hex codes, including the background color
+        #feb07c. This is written as:
+    </p>
+
+    <textarea>body {
     background-color: #feb07c;
 } </textarea>
-<textarea>The RGB value (16, 24, 36) for the background of these text area boxes, written as:
-textarea {
+
+    <p>
+        The RGB value (16, 24, 36) for the background of the "Sources" section below, written as:
+    </p>
+
+    <textarea>a {
     background-color: rgb(16, 24, 36);
-}
-</textarea>
-<textarea>The HSL ratio of (0, 0%, 100%) for the title font color, which looks like:
-h1 {
+}</textarea>
+
+    <p>
+        The HSL ratio of (0, 0%, 100%) for the title font color, which looks like:
+    </p>
+    <textarea>h1 {
     color: hsl(0, 0%, 100%);
-}
-</textarea>
+}</textarea>
 
 
 
