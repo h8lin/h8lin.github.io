@@ -22,6 +22,7 @@
             color: hsl(0, 0%, 100%);
             font-size: 300%;
         }
+
         h1 span {
             background-color: #b026ff;
             border-color: #50b848;
@@ -38,17 +39,21 @@
             color: #50b848;
             font-size: 150%;
         }
+
         h3 span {
             background-color: rgb(16, 24, 36);
             border-color: whitesmoke;
             border-style: dashed;
         }
 
-        h4, a {
+        h4,
+        a {
             color: #50b848;
             font-size: 90%;
         }
-        h4 span, a span {
+
+        h4 span,
+        a span {
             background-color: rgb(16, 24, 36);
         }
 
@@ -56,6 +61,7 @@
             color: #b026ff;
             font-size: 120%;
         }
+
         h5 span {
             border-color: chartreuse;
             border-style: dotted;
@@ -88,12 +94,11 @@
 
         @media (max-width:1280px) {
             textarea {
-                min-height:10lh;
+                min-height: 10lh;
                 font-size: 1rem;
                 max-width: none;
             }
         }
-
     </style>
 
 </head>
@@ -176,6 +181,30 @@ On the page, <h5>This text will have a dotted chartreuse border</h5> is shown be
     <p>
         CSS can use multiple types of color values. In order to select the color for the elements define above, you can
         use named colors, hexadecimal colors, RGB, HSL colors, and more.
+    </p>
+
+    <p>
+        Named colors are 140 preset colors within legal CSS and HTML color values, RGB and hexadecimal colors give
+        values to the red, green, and blue components that make up the color, and HSL gives values for hue, saturation,
+        and lightness.
+    </p>
+
+    <p>
+        For RGB, the syntax is rgb(red, green, blue) and the values are between 0 and 255 where 0 is
+        the least amount of that color and 255 is the highest. These can also be done with percentages, so the same
+        green can look like rgb(0,255,0) and rgb(0%,100%,0%).
+    </p>
+
+    <p>
+        For hexadecimal colors, the hex code uses #rrggbb with the values range from low to high at 00 to FF. The hex
+        code for the previous green example would then look like #00ff00.
+    </p>
+
+    <p>
+        HSL color values look similar to rbg values, but these are based on hue, saturation, and lightness
+        instead of red, green, and blue. Hue values are a degree measurement on the color wheel out of 360. So 0 or 360
+        is red, 120 is green, 240 is blue. Saturation and lightness are both percentage values where saturation is the
+        percentage of the color (where 0% becomes a gray shade) and lightness is black (0%) to white (100%).
     </p>
 
     <h6>
