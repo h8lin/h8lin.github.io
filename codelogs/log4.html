@@ -92,6 +92,12 @@
             font-family: inherit;
         }
 
+        li {
+            color: #d07eff;
+            font-size: 85%;
+            margin-left: 1.5rem;
+        }
+
         @media (max-width:1280px) {
             textarea {
                 min-height: 10lh;
@@ -183,29 +189,32 @@ On the page, <h5>This text will have a dotted chartreuse border</h5> is shown be
         use named colors, hexadecimal colors, RGB, HSL colors, and more.
     </p>
 
-    <p>
+    <ul>
+        <h6><em>A bit about color values</em></h6>
+    <li>
         Named colors are 140 preset colors within legal CSS and HTML color values, RGB and hexadecimal colors give
         values to the red, green, and blue components that make up the color, and HSL gives values for hue, saturation,
         and lightness.
-    </p>
+    </li>
 
-    <p>
+    <li>
         For RGB, the syntax is rgb(red, green, blue) and the values are between 0 and 255 where 0 is
         the least amount of that color and 255 is the highest. These can also be done with percentages, so the same
         green can look like rgb(0,255,0) and rgb(0%,100%,0%).
-    </p>
+    </li>
 
-    <p>
+    <li>
         For hexadecimal colors, the hex code uses #rrggbb with the values range from low to high at 00 to FF. The hex
         code for the previous green example would then look like #00ff00.
-    </p>
+    </li>
 
-    <p>
+    <li>
         HSL color values look similar to rbg values, but these are based on hue, saturation, and lightness
         instead of red, green, and blue. Hue values are a degree measurement on the color wheel out of 360. So 0 or 360
         is red, 120 is green, 240 is blue. Saturation and lightness are both percentage values where saturation is the
         percentage of the color (where 0% becomes a gray shade) and lightness is black (0%) to white (100%).
-    </p>
+    </li>
+</ul>
 
     <h6>
         For example, this webpage uses:
