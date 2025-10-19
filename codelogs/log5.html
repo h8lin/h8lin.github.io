@@ -112,20 +112,38 @@ The title image is added with:
 
     <section id="q2">
 
-        <h2>Besides background-image, what other CSS properties affect the display of background images? Describe at least two more CSS properties.</h2>
+        <h2>Besides background-image, what other CSS properties affect the display of background images? Describe at
+            least two more CSS properties.</h2>
 
         <p>
+            Some of the many options for CSS properties that affect background image displays include whether the image
+            repeats, where the image is situated on the page, and the size of the image. On this page, there are two
+            background images that are a mirrored pair. To format the layout, the first image is placed on the left side
+            of the page, and the second is placed on the right side. Both images are set to take up 50% of the page, and
+            they are repeated in the y-axis only. For this page, the background image display alternatives look like:
+        </p>
+        <textarea>body {
+    background-image: url("flowers-1.png"), url("flowers.png");
+    background-repeat: repeat-y;
+    background-color: lemonchiffon;
+    background-size: 50%, 50%;
+    background-position: left, right;
+}</textarea>
 
+        <p>
+            There is an additional CSS property added on this page as a fallback in case the image does not load. That
+            is the background-color property, and it is displayed behind the image.
         </p>
 
     </section>
 
     <section id="q3">
 
-        <h2>In one sentence, how would you define the differences between dimensions and resolution in a bitmap image?</h2>
+        <h2>In one sentence, how would you define the differences between dimensions and resolution in a bitmap image?
+        </h2>
 
         <p>
-
+            In bitmap images, the dimensions describe the size of the image in width x height, and the resolution describes the number of pixels in a certain area, usually pixels per inch (PPI) and dots per inch (DPI).
         </p>
 
     </section>
@@ -137,13 +155,19 @@ The title image is added with:
     Image by <a
         href="https://pixabay.com/users/lohrelei-1422286/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1154850">Gitti
         Lohr</a> from <a
-        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1154850">Pixabay</a> --
+        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1154850">Pixabay</a>
+    --
     Image by <a
         href="https://pixabay.com/users/sashasan-11485712/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7309016">Александра</a>
     from <a
-        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7309016">Pixabay</a> --
-    "Using multiple backgrounds" by <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds">MDN</a> --
+        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7309016">Pixabay</a>
+    --
+    "Using multiple backgrounds" by <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds">MDN</a>
+    --
     "CSS text-shadow Property" by <a href="https://www.w3schools.com/cssref/css3_pr_text-shadow.php">W3 Schools</a>
+    --
+    "CSS background Property" by <a href="https://www.w3schools.com/cssref/css3_pr_background.php">W3 Schools</a>
 
 </cite>
 
