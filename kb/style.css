@@ -9,14 +9,14 @@
 
 body {
     font-family: "Grandiflora One", sans-serif;
-    background: #lavenderblush;
+    background: lavenderblush;
     padding: 20px;
 }
 
 /* ---------------------------------------------
    HEADER
 ------------------------------------------------ */
-.header {
+.header, h1 {
     font-family: "Rubik Puddles";
     font-size: 90px;
     font-style: normal;
@@ -32,7 +32,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
-    border-bottom: 2px solid #lightblue;
+    border-bottom: 2px solid lightblue;
 }
 
 /* LEFT AREA */
