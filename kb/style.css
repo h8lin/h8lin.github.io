@@ -23,11 +23,11 @@ body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--text);
 
 /* Dropdown menu (CSS-only) */
 .menu{position:relative}
-.menu-dropdown{display:none; position:absolute; right:0; top:38px; background:#ffffff; border:1px solid #ddd; box-shadow:0 6px 18px rgba(0,0,0,0.08); padding:12px; min-width:200px; z-index:2500}
-.menu-dropdown a{display:block; padding:8px 10px; color:var(--text); text-decoration:none; font-size:14px}
-.menu-dropdown a:hover{background:#f6f6f6}
+.menu-dropdown{display:none; position:absolute; right:0; top:38px; background:var(--bg); border:1px solid (--green); box-shadow:0 6px 18px (--green); padding:12px; min-width:200px; z-index:2500}
+.menu-dropdown a{display:block; padding:8px 10px; color:var(--dark); text-decoration:none; font-size:14px}
+.menu-dropdown a:hover{background:(--bg)}
 .menu-dropdown .search-box{margin-top:8px}
-.menu-dropdown .search-box input{width:100%; padding:6px 8px; border:1px solid #ccc; border-radius:4px}
+.menu-dropdown .search-box input{width:100%; padding:6px 8px; border:1px solid (--green); border-radius:4px}
 .menu:focus-within .menu-dropdown{display:block}
 
 
