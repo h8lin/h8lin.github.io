@@ -21,6 +21,16 @@ body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--text);
 .top-nav{position:absolute; top:18px; right:24px}
 .menu-btn{background:none; border:0; color:var(--dark); font-size:16px; display:flex; align-items:center; gap:8px}
 
+/* Dropdown menu (CSS-only) */
+.menu{position:relative}
+.menu-dropdown{display:none; position:absolute; right:0; top:38px; background:#ffffff; border:1px solid #ddd; box-shadow:0 6px 18px rgba(0,0,0,0.08); padding:12px; min-width:200px; z-index:2500}
+.menu-dropdown a{display:block; padding:8px 10px; color:var(--text); text-decoration:none; font-size:14px}
+.menu-dropdown a:hover{background:#f6f6f6}
+.menu-dropdown .search-box{margin-top:8px}
+.menu-dropdown .search-box input{width:100%; padding:6px 8px; border:1px solid #ccc; border-radius:4px}
+.menu:focus-within .menu-dropdown{display:block}
+
+
 /* Title centered over the banner image */
 .site-title{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-family: 'Rubik', sans-serif; font-weight:400; font-size:72px; color: var(--text); text-align:center; letter-spacing:8px; text-shadow: 0 1px 0 rgba(255,255,255,0.2); z-index:1000}
 

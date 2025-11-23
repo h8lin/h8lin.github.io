@@ -13,7 +13,20 @@
             <img class="banner-img" src="banner.png" alt="Banner" />
             <img class="logo-circle" src="logo.png" alt="logo" />
             <nav class="top-nav">
-                <button class="menu-btn">☰ <span class="menu-text">Menu</span></button>
+                <div class="menu">
+                    <button class="menu-btn" aria-haspopup="true">☰ <span class="menu-text">Menu</span></button>
+                    <div class="menu-dropdown" role="menu">
+                        <a href="/" role="menuitem">Home</a>
+                        <a href="/kb/" role="menuitem">Knowledge Base</a>
+                        <a href="/codelogs/" role="menuitem">Code Logs</a>
+                        <a href="/favorite-recipe/" role="menuitem">Recipes</a>
+                        <a href="/writing-portfolio/" role="menuitem">Writing</a>
+                        <a href="/contact/" role="menuitem">Contact</a>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search…" aria-label="Search site" />
+                        </div>
+                    </div>
+                </div>
             </nav>
 
         </header>
