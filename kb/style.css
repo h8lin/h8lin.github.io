@@ -5,14 +5,15 @@
   --black:#111111;
 }
 *{box-sizing:border-box}
+.body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--black)}
+/* fix: select the body element (remove the dot) */
 body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--black)}
-.site-header{padding:20px 0 60px 0; position:relative}
-.header-inner{display:flex; align-items:center; gap:20px; padding:0 40px}
-.logo-circle{width:100px; height:100px; border-radius:50%; border:1px solid #c4c4c4; object-fit:cover}
-.title-band{background:var(--grey-1); height:100px; flex:1}
-.top-nav{padding:10px 40px}
+.site-header{position:relative; height:220px; background-image: url('banner.png'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center}
+/* Logo sits fixed in top-left above the banner */
+.logo-circle{position:fixed; top:16px; left:16px; width:100px; height:100px; border-radius:50%; border:1px solid #c4c4c4; object-fit:cover; z-index:2000}
+.top-nav{position:absolute; top:18px; right:24px}
 .menu-btn{background:none; border:0; color:var(--black); font-size:16px; display:flex; align-items:center; gap:8px}
-.site-title{font-family: 'Rubik', sans-serif; font-weight:400; font-size:72px; text-align:center; margin:10px 0 40px; letter-spacing:8px}
+.site-title{font-family: 'Rubik', sans-serif; font-weight:400; font-size:72px; color: #111; text-align:center; letter-spacing:8px; text-shadow: 0 1px 0 rgba(255,255,255,0.2)}
 
 .container{max-width:1360px; margin:0 auto; padding:20px}
 .product-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:120px 60px; padding:80px 20px 160px}
