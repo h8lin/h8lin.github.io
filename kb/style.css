@@ -15,19 +15,20 @@ body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--text);
 .site-header{position:relative; display:block}
 .banner-img{width:100%; height:auto; display:block}
 
-/* Logo sits over the banner's lower-left corner */
-.logo-circle{position:absolute; left:16px; bottom:16px; width:100px; height:100px; border-radius:50%; border:1px solid #c4c4c4; object-fit:cover; z-index:2000}
+/* Logo wrapper placed after the banner; logo will overlap the banner via translateY and become sticky at the top */
+.logo-wrap{ /* keeps the logo in flow so sticky works */ display:block}
+.logo-circle{position:sticky; top:16px; margin-left:16px; width:100px; height:100px; border-radius:50%; border:1px solid #c4c4c4; object-fit:cover; z-index:2000; transform:translateY(-50%); transition:width .18s ease, height .18s ease, transform .18s ease}
 
 .top-nav{position:absolute; top:18px; right:24px}
 .menu-btn{background:none; border:0; color:var(--dark); font-size:16px; display:flex; align-items:center; gap:8px}
 
 /* Dropdown menu (CSS-only) */
 .menu{position:relative}
-.menu-dropdown{display:none; position:absolute; right:0; top:38px; background:var(--bg); border:1px solid (--green); box-shadow:0 6px 18px (--green); padding:12px; min-width:200px; z-index:2500}
-.menu-dropdown a{display:block; padding:8px 10px; color:var(--dark); text-decoration:none; font-size:14px}
-.menu-dropdown a:hover{background:(--bg)}
+.menu-dropdown{display:none; position:absolute; right:0; top:38px; background:#fff; border:1px solid #ddd; box-shadow:0 6px 18px rgba(0,0,0,0.08); padding:12px; min-width:200px; z-index:2500}
+.menu-dropdown a{display:block; padding:8px 10px; color:var(--text); text-decoration:none; font-size:14px}
+.menu-dropdown a:hover{background:#f6f6f6}
 .menu-dropdown .search-box{margin-top:8px}
-.menu-dropdown .search-box input{width:100%; padding:6px 8px; border:1px solid (--green); border-radius:4px}
+.menu-dropdown .search-box input{width:100%; padding:6px 8px; border:1px solid #ccc; border-radius:4px}
 .menu:focus-within .menu-dropdown{display:block}
 
 
@@ -54,5 +55,5 @@ body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--text);
 @media (max-width:600px){
   .product-grid{grid-template-columns:1fr; gap:40px}
   .site-title{font-size:36px}
-  .logo-circle{width:60px;height:60px; left:12px; bottom:12px}
+  .logo-circle{width:60px;height:60px; margin-left:12px; transform:translateY(-40%)}
 }
