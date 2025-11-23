@@ -15,8 +15,8 @@ body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--text);
 .site-header{position:relative; display:block}
 .banner-img{width:100%; height:auto; display:block}
 
-/* Logo sits fixed in top-left above the banner */
-.logo-circle{position:fixed; top:70px; left:16px; width:100px; height:100px; border-radius:50%; border:1px solid #c4c4c4; object-fit:cover; z-index:2000}
+/* Logo sits over the banner's lower-left corner */
+.logo-circle{position:absolute; left:16px; bottom:16px; width:100px; height:100px; border-radius:50%; border:1px solid #c4c4c4; object-fit:cover; z-index:2000}
 
 .top-nav{position:absolute; top:18px; right:24px}
 .menu-btn{background:none; border:0; color:var(--dark); font-size:16px; display:flex; align-items:center; gap:8px}
@@ -44,5 +44,5 @@ body{font-family: 'Poppins', system-ui, sans-serif; margin:0; color:var(--text);
 @media (max-width:600px){
   .product-grid{grid-template-columns:1fr; gap:40px}
   .site-title{font-size:36px}
-  .logo-circle{width:60px;height:60px}
+  .logo-circle{width:60px;height:60px; left:12px; bottom:12px}
 }
