@@ -22,6 +22,7 @@ footer {
   font-family: 'Poppins', system-ui, sans-serif;
   margin: 0;
   color: var(--dark);
+  font-size: x-small;
 }
 
 /* Header uses an actual <img> element so the full photo is always visible */
