@@ -18,6 +18,12 @@ body {
   background-color: var(--bg)
 }
 
+footer {
+  font-family: 'Poppins', system-ui, sans-serif;
+  margin: 0;
+  color: var(--dark);
+}
+
 /* Header uses an actual <img> element so the full photo is always visible */
 .site-header {
   position: relative;
