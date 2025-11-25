@@ -262,7 +262,6 @@ h1{
   /* max width is configurable via CSS variable --product-image-max */
   max-width: var(--product-image-max, 560px);
   border-radius: 8px;
-  box-shadow: 0 4px 12px var(--bright);
   display: block;
   background-color: var(--green);
 }
