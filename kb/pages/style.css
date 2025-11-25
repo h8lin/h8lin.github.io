@@ -57,16 +57,22 @@ footer {
   right: 24px
 }
 
-.menu-btn{
+.menu-btn {
   background: none;
   border: 0;
   color: var(--dark);
   font-size: 16px;
   display: flex;
   align-items: center;
-  gap: 8px
+  gap: 8px;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
 }
 
+.menu-btn:hover {
+  opacity: 0.8;
+}
 
 /* Dropdown menu */
 .menu {
@@ -98,15 +104,19 @@ footer {
   background: var(--bright)
 }
 
+.menu-dropdown .search-box {
+  margin-top: 8px
+}
+
 .menu-dropdown .search-box input {
-  margin-top: 8px;
   width: 100%;
   padding: 6px 8px;
   border: 1px solid var(--green);
   border-radius: 4px
 }
 
-.menu:focus-within .menu-dropdown {
+/* Show dropdown when details is open */
+.menu[open] .menu-dropdown {
   display: block
 }
 
@@ -123,27 +133,12 @@ footer {
   cursor: pointer;
 }
 
-textarea {
-  width: 100%;
-  height: 100px;
-  padding: 8px;
-  border: 1px solid var(--green);
-  border-radius: 4px;
-  resize: vertical;
-}
-
 .product-review {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 80px 20px 160px;
-}
-
-.review-card
-/* Headings */
-.page-header {
-    text-align: center;
-    margin: 40px 0 0 0;
+  padding: 80px 20px 160px;{
+  text-align: left;
 }
 
 h3{
@@ -185,7 +180,6 @@ h1{
 }
 
 .product-name::after {
-  content: "";
   display: block;
   height: 1px;
   background: var(--dark);
@@ -202,7 +196,7 @@ h1{
 
 .btn {
   background: var(--bright);
-  color: #fff;
+  color: var(--bg);
   border: 0;
   padding: 12px 18px;
   border-radius: 3px;
