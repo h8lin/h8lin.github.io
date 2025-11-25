@@ -57,7 +57,7 @@ footer {
   right: 24px
 }
 
-.menu-btn {
+.menu-btn, .submit-button {
   background: none;
   border: 0;
   color: var(--dark);
@@ -97,11 +97,8 @@ footer {
   background: var(--bright)
 }
 
-.menu-dropdown .search-box {
+.menu-dropdown .search-box input, textarea {
   margin-top: 8px
-}
-
-.menu-dropdown .search-box input {
   width: 100%;
   padding: 6px 8px;
   border: 1px solid var(--green);
