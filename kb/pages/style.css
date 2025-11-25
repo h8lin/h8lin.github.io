@@ -131,6 +131,15 @@ textarea {
   border-radius: 4px;
   resize: vertical;
 }
+
+.product-review {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 20px 160px;
+}
+
+.review-card
 /* Headings */
 .page-header {
     text-align: center;
