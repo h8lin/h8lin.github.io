@@ -17,7 +17,6 @@ body {
   color: var(--text);
   background-color: var(--bg)
 }
-
 footer {
   font-family: 'Poppins', system-ui, sans-serif;
   margin: 0;
@@ -25,7 +24,7 @@ footer {
   font-size: x-small;
 }
 
-/* Header uses an actual <img> element so the full photo is always visible */
+/* Header */
 .site-header {
   position: relative;
   display: block
@@ -37,7 +36,7 @@ footer {
   display: block
 }
 
-/* Logo directly placed after the banner; simple CSS sticky behavior */
+/* Logo */
 .logo-circle {
   position: sticky;
   top: 16px;
@@ -51,6 +50,7 @@ footer {
   transition: width .18s ease, height .18s ease
 }
 
+/* Top navigation menu */
 .top-nav {
   position: absolute;
   top: 18px;
@@ -67,7 +67,7 @@ footer {
   gap: 8px
 }
 
-/* Dropdown menu (CSS-only) */
+/* Dropdown menu */
 .menu {
   position: relative
 }
@@ -113,7 +113,7 @@ footer {
 }
 
 
-
+/* Main content */
 .container {
   max-width: 1360px;
   margin: 0 auto;
