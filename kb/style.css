@@ -290,8 +290,9 @@ h1{
   /* max width is configurable via CSS variable --product-image-max */
   max-width: var(--product-image-max, 560px);
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px var(--dark);
   display: block;
+  background-color: var(--green);
 }
 
 /* Utility classes to quickly choose an image size */
@@ -323,6 +324,7 @@ h1{
 .product-description {
   margin-bottom: 18px;
   line-height: 1.4;
+  color: var(--dark);
 }
 
 .product-actions {
