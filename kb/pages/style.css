@@ -67,16 +67,7 @@ footer {
   gap: 8px
 }
 
-.submit-button {
-  background: var(--bright);
-  color: #fff;
-  border: 0;
-  padding: 8px 12px;
-  border-radius: 3px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-}
+
 /* Dropdown menu */
 .menu {
   position: relative
@@ -107,7 +98,7 @@ footer {
   background: var(--bright)
 }
 
-.menu-dropdown .search-box input, textarea {
+.menu-dropdown .search-box input {
   margin-top: 8px
   width: 100%;
   padding: 6px 8px;
@@ -119,7 +110,46 @@ footer {
   display: block
 }
 
+/*Review submit*/
 
+.submit-button {
+  background: var(--bright);
+  color: #fff;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  resize: vertical;
+}
+/* Headings */
+.page-header {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+h3{
+  margin-bottom: 8px;
+  color: var(--dark);
+  font-size: 110%;
+  font-weight: 600;
+}
+
+h1{
+    font-size: 200%;
+    color: var(--dark);
+    margin-bottom: 40px;
+    text-align: center;
+}
 /* Main content */
 .container {
   max-width: 1360px;
