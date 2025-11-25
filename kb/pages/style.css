@@ -99,7 +99,7 @@ footer {
 }
 
 .menu-dropdown .search-box input {
-  margin-top: 8px
+  margin-top: 8px;
   width: 100%;
   padding: 6px 8px;
   border: 1px solid var(--green);
