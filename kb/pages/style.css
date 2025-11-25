@@ -57,7 +57,7 @@ footer {
   right: 24px
 }
 
-.menu-btn, .submit-button {
+.menu-btn{
   background: none;
   border: 0;
   color: var(--dark);
@@ -67,6 +67,16 @@ footer {
   gap: 8px
 }
 
+.submit-button {
+  background: var(--bright);
+  color: #fff;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
 /* Dropdown menu */
 .menu {
   position: relative
