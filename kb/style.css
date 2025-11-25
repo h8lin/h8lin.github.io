@@ -243,6 +243,76 @@ h1{
   font-size: 16px
 }
 
+/* Product detail page styles */
+.product-detail {
+  padding: 40px 20px 120px;
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.product-image,
+.product-image img {
+  width: 100%;
+  height: auto;
+  /* max width is configurable via CSS variable --product-image-max */
+  max-width: var(--product-image-max, 560px);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px var(--dark);
+  display: block;
+  background-color: var(--green);
+}
+
+/* Utility classes to quickly choose an image size */
+.product-image--small { --product-image-max: 240px; }
+.product-image--medium { --product-image-max: 420px; }
+.product-image--large { --product-image-max: 720px; }
+
+/* You can also set the variable inline on the container or page:
+   <div class="product-image" style="--product-image-max:320px"> ... </div>
+*/
+
+.product-info {
+  padding: 8px 0;
+}
+
+.product-title {
+  font-size: 28px;
+  margin: 0 0 8px;
+  color: var(--dark);
+}
+
+.product-price {
+  font-size: 20px;
+  color: var(--warm);
+  font-weight: 700;
+  margin: 8px 0 16px;
+}
+
+.product-description {
+  margin-bottom: 18px;
+  line-height: 1.4;
+  color: var(--dark);
+}
+
+.product-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.product-actions .qty-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  text-align: center;
+}
+
 /* Responsive */
 @media (max-width:1000px) {
   .product-grid {
@@ -252,6 +322,16 @@ h1{
 
   .site-title {
     font-size: 48px
+  }
+}
+
+@media (max-width:900px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-image,
+  .product-image img {
+    max-width: 100%;
   }
 }
 
