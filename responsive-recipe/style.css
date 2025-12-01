@@ -105,21 +105,21 @@ body {
   border-radius: 8px;
   padding: 16px;
   border: 1px solid #c4c4c4;
-  max-width: fit-content;
-  text-align: center;
-  grid-column: 1;
-  grid-row: 4;
+  max-width: 328px;
+  text-align: left;
+  grid-column: 1 / 2; /* left column */
+  grid-row: 3; /* place ingredients in row 3 */
 }
 
 .recipe-times {
   display: flex;
   justify-content: space-between;
-  margin: 32px 0;
+  margin: 8px 0 12px 0;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  grid-column: 1;
-  grid-row: 3;
+  grid-column: 1 / 2; /* left column */
+  grid-row: 2; /* put times in row 2 */
 }
 
 .recipe-time-block {
@@ -131,12 +131,23 @@ body {
 }
 
 .recipe-instructions {
-  font-size: 130%;
-  line-height: 32px;
-  margin-top: 32px;
-  max-width: 694px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 100%;
+  line-height: 1.6;
+  margin-top: 8px;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  grid-column: 2 / 3; /* place instructions in right column */
+  grid-row: 2; /* row 3 */
+}
+
+/* position the Instructions heading into the right column row 2 */
+.instructions-title {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  justify-self: start;
+  align-self: end;
+  margin: 0 0 8px 0;
 }
 
 
@@ -199,5 +210,8 @@ footer {
 
   .recipe-instructions {
     max-width: 100%;
+    grid-column: 1; /* stack back into single column */
+    grid-row: auto;
+    margin-top: 8px;
   }
 }
