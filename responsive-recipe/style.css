@@ -1,4 +1,4 @@
-/* Responsive Recipe Page Styles for Figma Design */
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -84,10 +84,10 @@ body {
   font-family: 'Freehand', cursive, 'Joan', serif;
   font-size: 90%;
   line-height: 1.2;
-  margin: 0;
+  margin-top: 50%;
   text-align: left;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .recipe-section {
