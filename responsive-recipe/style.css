@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   color: #222;
+  column-count: 2;
 }
 
 .recipe-container {
@@ -115,6 +116,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  body {
+    column-count: 1 !important;
+  }
   .recipe-container {
     padding: 8px;
   }
@@ -135,4 +139,6 @@ body {
   .recipe-instructions {
     max-width: 100%;
   }
+  
+
 }
