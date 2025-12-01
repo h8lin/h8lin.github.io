@@ -99,9 +99,7 @@ body {
   line-height: 40px;
 }
 
-.sauce-recipe,
-.salad-recipe,
-.pita-recipe {
+.ingredients {
   font-size: 16px;
   line-height: 28px;
   margin: 0 auto 0;
@@ -113,7 +111,7 @@ body {
   text-align: center;
 }
 
-.salad-recipe {
+.ingredients {
   grid-column: 2;
 }
 
@@ -158,9 +156,9 @@ body {
   }
 
   /* Make column-block recipes stack and span full width */
-  .sauce-recipe,
-  .salad-recipe,
-  .pita-recipe {
+  .ingredients,
+  .ingredients,
+  .ingredients {
     grid-column: 1;
     max-width: 100%;
     margin-left: auto;
@@ -169,7 +167,7 @@ body {
   }
 
   /* Reset salad placement to flow naturally in single column */
-  .salad-recipe {
+  .ingredients {
     grid-column: 1;
   }
 
