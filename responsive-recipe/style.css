@@ -131,7 +131,7 @@ body {
 }
 
 .recipe-instructions {
-  font-size: 20px;
+  font-size: 130%;
   line-height: 32px;
   margin-top: 32px;
   max-width: 694px;
@@ -143,6 +143,10 @@ body {
 
 .recipe-instructions li {
   margin-bottom: 16px;
+}
+footer {
+  font-size: 50%;
+  color:#222;
 }
 
 @media (max-width: 1000px) {
