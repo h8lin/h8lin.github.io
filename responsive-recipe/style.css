@@ -119,7 +119,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   grid-column: 1;
-  grod-row: 3;
+  grid-row: 3;
 }
 
 .recipe-time-block {
@@ -200,6 +200,4 @@ footer {
   .recipe-instructions {
     max-width: 100%;
   }
-
-
 }
