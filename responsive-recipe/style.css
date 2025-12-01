@@ -15,6 +15,12 @@ body {
   color: #222;
 }
 
+.ingredient-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin: 0 auto 0;
+}
 
 .recipe-container {
   max-width: 900px;
@@ -33,6 +39,7 @@ body {
   text-align: center;
   margin-bottom: 8px;
   margin-top: 32px;
+  grid-column: 1;
 }
 
 .recipe-subtitle {
@@ -70,6 +77,7 @@ body {
   object-fit: cover;
   background: #eee;
   grid-column: 1;
+  grid-row: 2;
 
 }
 
