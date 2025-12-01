@@ -167,7 +167,10 @@ footer {
     grid-template-columns: 1fr;
     margin-top: 0px;
   }
-  .recipe-title, .recipe-subtitle, .recipe-description {
+  .recipe-title {
+    font-size: 200%
+  }
+  .recipe-subtitle, .recipe-description {
     margin-bottom: 4px;
   }
 .recipe-description {
