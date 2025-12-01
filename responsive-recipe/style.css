@@ -152,7 +152,32 @@ body {
 
   .recipe-container {
     padding: 8px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* single column on small viewports */
+  }
+
+  /* Make column-block recipes stack and span full width */
+  .sauce-recipe,
+  .salad-recipe,
+  .pita-recipe {
+    grid-column: 1;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Reset salad placement to flow naturally in single column */
+  .salad-recipe {
+    grid-column: 1;
+  }
+
+  /* Center author and image credit and remove floats */
+  .recipe-author,
+  .recipe-image-credit {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto 8px auto;
   }
 
   .recipe-image {
