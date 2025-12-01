@@ -24,8 +24,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  grid-column: 2;
-  grid-row: 2;
 }
 
 .recipe-title {
@@ -54,7 +52,7 @@ body {
   margin-top: 0;
   float: left;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .recipe-image-credit {
@@ -63,7 +61,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .recipe-image {
@@ -75,8 +73,8 @@ body {
   height: 246px;
   object-fit: cover;
   background: #eee;
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
 
 }
 
@@ -100,7 +98,7 @@ body {
 }
 
 .ingredients {
-  font-size: 16px;
+  font-size: 90%;
   line-height: 28px;
   margin: 0 auto 0;
   background: #fafafa;
@@ -109,10 +107,8 @@ body {
   border: 1px solid #c4c4c4;
   max-width: fit-content;
   text-align: center;
-}
-
-.ingredients {
-  grid-column: 2;
+  grid-column: 1;
+  grid-row: 4;
 }
 
 .recipe-times {
@@ -123,6 +119,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   grid-column: 1;
+  grod-row: 3;
 }
 
 .recipe-time-block {
@@ -152,50 +149,48 @@ body {
 
   .recipe-container {
     padding: 8px;
-    grid-template-columns: 1fr; /* single column on small viewports */
+    grid-template-columns: 1fr;
+    margin-top: 0px;
   }
-
-  /* Make column-block recipes stack and span full width */
+  .recipe-title, .recipe-subtitle, .recipe-description {
+    margin-bottom: 4px;
+  }
+.recipe-description {
+  margin-top: 20%;
+}
   .ingredients,
-  .ingredients,
-  .ingredients {
+ {
     grid-column: 1;
-    max-width: 100%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-top: 0px;
   }
 
-  /* Reset salad placement to flow naturally in single column */
-  .ingredients {
-    grid-column: 1;
-  }
+.recipe-author, .recipe-image-credit {
+ margin-bottom: 0px; 
+}
 
-  /* Center author and image credit and remove floats */
-  .recipe-author,
-  .recipe-image-credit {
-    float: none;
-    display: block;
-    text-align: center;
-    margin: 0 auto 8px auto;
-  }
 
   .recipe-image {
     max-width: 100%;
-    height: 180px;
+    height: 50%;
+    margin-top: 0px;
   }
 
   .recipe-ingredients {
     max-width: 100%;
+
   }
 
   .recipe-times {
     flex-direction: column;
-    align-items: center;
+    margin-top: 0px;
   }
 
   .recipe-time-block {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .recipe-instructions {
