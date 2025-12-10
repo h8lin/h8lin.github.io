@@ -153,7 +153,7 @@ textarea {
     margin: 40px 0 0 0;
 }
 
-h3{
+h3, label {
   margin-bottom: 8px;
   color: var(--dark);
   font-size: 110%;
