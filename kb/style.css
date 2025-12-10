@@ -68,7 +68,6 @@ footer {
   gap: 8px
 }
 
-
 /* Dropdown menu */
 .menu {
   position: relative;
@@ -114,7 +113,6 @@ footer {
 }
 
 /*Review submit*/
-
 .submit-button {
   background: var(--bright);
   color: #fff;
@@ -177,26 +175,34 @@ h1 {
   padding: 20px
 }
 
+/*Scroll Container for images*/
 .scroll-container {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 0;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
 .scroll-container img {
   flex: 0 0 100%;
-  /* each image is full width of the card */
   scroll-snap-align: start;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-
+/* Product Grid */
 .product-grid,
 .article-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 120px 60px;
-  padding: 80px 20px 160px
+  padding: 80px 20px 160px;
+  align-items: end;
 }
 
 .product-card,
@@ -279,9 +285,10 @@ h1 {
   align-items: start;
 }
 
+/* Product Images (merged duplicates) */
+
 .product-image,
-.product-image img,
-.scroll-container img {
+.product-image img {
   width: 100%;
   height: auto;
   max-width: var(--product-image-max, 560px);
@@ -290,37 +297,16 @@ h1 {
   background-color: var(--green);
 }
 
-/*Photo Scroll*/
-.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-}
-
-.scroll-container::-webkit-scrollbar {
-  display: none;
-}
-
-.scroll-container img {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-}
-
 /*Arrows for Photo Scroll*/
 .carousel {
   position: relative;
 }
 
 .carousel .scroll-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
 .carousel .scroll-container img {
-  flex: 0 0 100%;
   scroll-snap-align: center;
   border-radius: 8px;
 }
@@ -330,7 +316,7 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.45);
+  background: var(--green);
   color: white;
   border: 0;
   padding: 10px 14px;
@@ -352,12 +338,15 @@ h1 {
   padding: 3% 2% 6%;
   margin: 0 auto;
   color: var(--green);
-  p {
-    color: var(--dark)
-  }
-  h2, h3 {
-    text-align: center;
-  }
+}
+
+.article p {
+  color: var(--dark);
+}
+
+.article h2,
+.article h3 {
+  text-align: center;
 }
 
 /*Image sizes*/
@@ -372,10 +361,6 @@ h1 {
 .product-image--large {
   --product-image-max: 720px;
 }
-
-/* You can also set the variable inline on the container or page:
-   <div class="product-image" style="--product-image-max:320px"> ... </div>
-*/
 
 .product-info {
   padding: 8px 0;
@@ -452,20 +437,6 @@ p {
   flex-grow: 1;
 }
 
-.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.scroll-container img {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /*About Page Styles*/
 .about-wrapper {
   max-width: 1360px;
@@ -487,7 +458,7 @@ p {
   border-radius: 10px;
   background: var(--green);
   object-fit: cover;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* About text */
@@ -525,28 +496,7 @@ p {
     max-width: 100%;
   }
 
-    .about-grid {
+  .about-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .about-photo {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width:600px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 40px
-  }
-
-  .site-title {
-    font-size: 36px
-  }
-
-  .logo-circle {
-    width: 60px;
-    height: 60px;
-    margin-left: 12px
-  }
-}
