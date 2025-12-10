@@ -351,7 +351,13 @@ h1 {
 .article {
   padding: 3% 2% 6%;
   margin: 0 auto;
-  color: var(--dark);
+  color: var(--green);
+  p {
+    color: var(--dark)
+  }
+  h2, h3 {
+    text-align: center;
+  }
 }
 
 /*Image sizes*/
