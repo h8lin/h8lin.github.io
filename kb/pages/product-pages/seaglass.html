@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kayt’s Blend</title>
+    <title>Sea Glass- Polymer Clay Earrings</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://h8lin.github.io/kb/style.css">
@@ -33,8 +33,41 @@
         </nav>
     </header>
     <!-- Logo image -->
-    <a href="https://h8lin.github.io/kb/kb.html"><img class="logo-circle" src="https://h8lin.github.io/kb/logo.png" alt="logo" /></a>
+    <a href="https://h8lin.github.io/kb/kb.html"><img class="logo-circle" src="https://h8lin.github.io/kb/logo.png"
+            alt="logo" /></a>
 
     <!--End page header-->
 
     <!-- Products Grid-->
+    <main class="container">
+        <section class="product-grid" aria-label="Products">
+            <article class="product-card">
+                <div class="carousel">
+                    <button class="left"
+                        onclick="this.nextElementSibling.scrollBy({left:-300,behavior:'smooth'})">←</button>
+                    <div class="scroll-container">
+                        <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Earrings2.jpg"
+                            alt="Sea Glass- Polymer Clay Earrings Photo 1" />
+                        <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Earrings4.jpg"
+                            alt="Sea Glass- Polymer Clay Earrings Photo 2" />
+                    </div>
+                    <button class="right"
+                        onclick="this.previousElementSibling.scrollBy({left:300,behavior:'smooth'})">→</button>
+                </div>
+                <h2 class="product-name">Sea Glass- Polymer Clay Earrings</h2>
+                <div class="controls-row">
+                    <button class="btn add">ADD TO CART <span class="arrow">→</span></button>
+                    <div class="qty">
+                        <button class="qty-btn" data-action="decrease">−</button>
+                        <input class="qty-input" type="text" value="1" aria-label="Quantity" />
+                        <button class="qty-btn" data-action="increase">+</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Kayt's Blend. All rights reserved.</p>
+    </footer>
+</body>
