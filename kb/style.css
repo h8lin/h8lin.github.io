@@ -173,6 +173,19 @@ h1{
   padding: 20px
 }
 
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 0;
+}
+
+.scroll-container img {
+  flex: 0 0 100%;   /* each image is full width of the card */
+  scroll-snap-align: start;
+}
+
+
 .product-grid, .article-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -258,7 +271,7 @@ h1{
 }
 
 .product-image,
-.product-image img, div.scroll-container,
+.product-image img,
 div.scroll-container img {
   width: 100%;
   height: auto;
