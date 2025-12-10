@@ -427,6 +427,45 @@ p {
   color: var(--dark)
 }
 
+/*Product Full Page Grid*/
+.full-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 20px;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.full-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.full-description {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 16px;
+  flex-grow: 1;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-container img {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Responsive */
 @media (max-width:1000px) {
   .product-grid {
