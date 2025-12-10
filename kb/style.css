@@ -476,6 +476,44 @@ p {
   color: var(--dark);
 }
 
+/*Thank you*/
+.thank-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+  background-color: var(--bg);
+  min-height: 60vh;
+  text-align: center;
+}
+
+.thank-you-container h1 {
+  font-size: 36px;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.thank-you-container p {
+  font-size: 18px;
+  color: var(--dark);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.thank-you-container .btn {
+  background: var(--bright);
+  color: #fff;
+  padding: 12px 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.thank-you-container .btn:hover {
+  background: var(--warm);
+}
+
 /* Responsive */
 @media (max-width:1000px) {
   .product-grid {
