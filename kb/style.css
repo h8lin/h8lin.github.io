@@ -173,25 +173,25 @@ h1{
   padding: 20px
 }
 
-.product-grid {
+.product-grid, .article-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 120px 60px;
   padding: 80px 20px 160px
 }
 
-.product-card {
+.product-card, .article-card {
   min-height: 120px
 }
 
-.product-name {
+.product-name, .article-title {
   font-size: 14px;
   color: var(--warm);
   margin: 0 0 8px;
   letter-spacing: 1px
 }
 
-.product-name::after {
+.product-name::after, .article-title {
   content: "";
   display: block;
   height: 1px;
