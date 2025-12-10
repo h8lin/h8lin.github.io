@@ -43,11 +43,17 @@
         <section class="product-grid" aria-label="Products">
             <!-- Repeatable product card -->
             <article class="product-card">
-                <div class="scroll-container">
-                    <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Pumpkin3.jpg"
-                        alt="Pumpkin Pop Crochet Sweater Photo 1" />
-                    <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Pumpkin4.jpg"
-                        alt="Pumpkin Pop Crochet Sweater Photo 2" />
+                <div class="carousel">
+                    <button class="left"
+                        onclick="this.nextElementSibling.scrollBy({left:-300,behavior:'smooth'})">←</button>
+                    <div class="scroll-container">
+                        <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Pumpkin3.jpg"
+                            alt="Pumpkin Pop Crochet Sweater Photo 1" />
+                        <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Pumpkin4.jpg"
+                            alt="Pumpkin Pop Crochet Sweater Photo 2" />
+                    </div>
+                    <button class="right"
+                        onclick="this.previousElementSibling.scrollBy({left:300,behavior:'smooth'})">→</button>
                 </div>
                 <h2 class="product-name">Pumpkin Pop Crochet Sweater</h2>
                 <div class="controls-row">
@@ -59,26 +65,32 @@
                     </div>
                 </div>
             </article>
-        </section>
 
-        <article class="product-card">
-            <div class="scroll-container">
-                <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Earrings2.jpg"
-                    alt="Sea Glass- Polymer Clay Earrings Photo 1" />
-                <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Earrings4.jpg"
-                    alt="Sea Glass- Polymer Clay Earrings Photo 2" />
-            </div>
-            <h2 class="product-name">Sea Glass- Polymer Clay Earrings</h2>
-            <div class="controls-row">
-                <button class="btn add">ADD TO CART <span class="arrow">→</span></button>
-                <div class="qty">
-                    <button class="qty-btn" data-action="decrease">−</button>
-                    <input class="qty-input" type="text" value="1" aria-label="Quantity" />
-                    <button class="qty-btn" data-action="increase">+</button>
+
+            <article class="product-card">
+                <div class="carousel">
+                    <button class="left"
+                        onclick="this.nextElementSibling.scrollBy({left:-300,behavior:'smooth'})">←</button>
+                    <div class="scroll-container">
+                        <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Earrings2.jpg"
+                            alt="Sea Glass- Polymer Clay Earrings Photo 1" />
+                        <img class="product-image" src="https://h8lin.github.io/kb/pages/product-photos/Earrings4.jpg"
+                            alt="Sea Glass- Polymer Clay Earrings Photo 2" />
+                    </div>
+                    <button class="right"
+                        onclick="this.previousElementSibling.scrollBy({left:300,behavior:'smooth'})">→</button>
                 </div>
-            </div>
-        </article>
-
+                <h2 class="product-name">Sea Glass- Polymer Clay Earrings</h2>
+                <div class="controls-row">
+                    <button class="btn add">ADD TO CART <span class="arrow">→</span></button>
+                    <div class="qty">
+                        <button class="qty-btn" data-action="decrease">−</button>
+                        <input class="qty-input" type="text" value="1" aria-label="Quantity" />
+                        <button class="qty-btn" data-action="increase">+</button>
+                    </div>
+                </div>
+            </article>
+        </section>
 
     </main>
 

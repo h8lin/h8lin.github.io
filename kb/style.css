@@ -17,6 +17,7 @@ body {
   color: var(--text);
   background-color: var(--bg)
 }
+
 footer {
   font-family: 'Poppins', system-ui, sans-serif;
   margin: 0;
@@ -57,7 +58,7 @@ footer {
   right: 24px
 }
 
-.menu-btn{
+.menu-btn {
   background: none;
   border: 0;
   color: var(--dark);
@@ -147,25 +148,28 @@ textarea {
   padding: 20px;
   background: var(--green);
 }
+
 /* Headings */
 .page-header {
-    text-align: center;
-    margin: 40px 0 0 0;
+  text-align: center;
+  margin: 40px 0 0 0;
 }
 
-h3, label {
+h3,
+label {
   margin-bottom: 8px;
   color: var(--dark);
   font-size: 110%;
   font-weight: 600;
 }
 
-h1{
-    font-size: 200%;
-    color: var(--dark);
-    margin-bottom: 40px;
-    text-align: center;
+h1 {
+  font-size: 200%;
+  color: var(--dark);
+  margin-bottom: 40px;
+  text-align: center;
 }
+
 /* Main content */
 .container {
   max-width: 1360px;
@@ -181,30 +185,35 @@ h1{
 }
 
 .scroll-container img {
-  flex: 0 0 100%;   /* each image is full width of the card */
+  flex: 0 0 100%;
+  /* each image is full width of the card */
   scroll-snap-align: start;
 }
 
 
-.product-grid, .article-grid {
+.product-grid,
+.article-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 120px 60px;
   padding: 80px 20px 160px
 }
 
-.product-card, .article-card {
+.product-card,
+.article-card {
   min-height: 120px
 }
 
-.product-name, .article-title {
+.product-name,
+.article-title {
   font-size: 14px;
   color: var(--warm);
   margin: 0 0 8px;
   letter-spacing: 1px
 }
 
-.product-name::after, .article-title {
+.product-name::after,
+.article-title {
   content: "";
   display: block;
   height: 1px;
@@ -272,7 +281,7 @@ h1{
 
 .product-image,
 .product-image img,
-div.scroll-container img {
+.scroll-container img {
   width: 100%;
   height: auto;
   max-width: var(--product-image-max, 560px);
@@ -281,10 +290,75 @@ div.scroll-container img {
   background-color: var(--green);
 }
 
+/*Photo Scroll*/
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container img {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+/*Arrows for Photo Scroll*/
+.carousel {
+  position: relative;
+}
+
+.carousel .scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel .scroll-container img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  border-radius: 8px;
+}
+
+/* Arrow buttons */
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: 0;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.carousel button.left {
+  left: 10px;
+}
+
+.carousel button.right {
+  right: 10px;
+}
+
 /*Image sizes*/
-.product-image--small { --product-image-max: 240px; }
-.product-image--medium { --product-image-max: 420px; }
-.product-image--large { --product-image-max: 720px; }
+.product-image--small {
+  --product-image-max: 240px;
+}
+
+.product-image--medium {
+  --product-image-max: 420px;
+}
+
+.product-image--large {
+  --product-image-max: 720px;
+}
 
 /* You can also set the variable inline on the container or page:
    <div class="product-image" style="--product-image-max:320px"> ... </div>
@@ -327,6 +401,19 @@ div.scroll-container img {
   text-align: center;
 }
 
+/* Contact Form Styles Not in Reviews Card */
+ul {
+  color: var(--dark);
+}
+
+a {
+  color: var(--warm)
+}
+
+p {
+  color: var(--dark)
+}
+
 /* Responsive */
 @media (max-width:1000px) {
   .product-grid {
@@ -343,6 +430,7 @@ div.scroll-container img {
   .product-detail-grid {
     grid-template-columns: 1fr;
   }
+
   .product-image,
   .product-image img {
     max-width: 100%;
