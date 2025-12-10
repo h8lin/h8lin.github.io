@@ -258,17 +258,17 @@ h1{
 }
 
 .product-image,
-.product-image img {
+.product-image img, div.scroll-container,
+div.scroll-container img {
   width: 100%;
   height: auto;
-  /* max width is configurable via CSS variable --product-image-max */
   max-width: var(--product-image-max, 560px);
   border-radius: 8px;
   display: block;
   background-color: var(--green);
 }
 
-/* Utility classes to quickly choose an image size */
+/*Image sizes*/
 .product-image--small { --product-image-max: 240px; }
 .product-image--medium { --product-image-max: 420px; }
 .product-image--large { --product-image-max: 720px; }
