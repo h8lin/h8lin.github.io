@@ -347,6 +347,13 @@ h1 {
   right: 10px;
 }
 
+/*Article Body Formatting*/
+.article {
+  padding: 3% 2% 6%;
+  margin: 0 auto;
+  color: var(--dark);
+}
+
 /*Image sizes*/
 .product-image--small {
   --product-image-max: 240px;
