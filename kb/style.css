@@ -418,7 +418,7 @@ p {
 
 .textarea-container textarea {
   flex: 1 1 auto;
-  margin-right: 1rem;
+  margin-right: 3rem;
   resize: vertical;
 }
 
