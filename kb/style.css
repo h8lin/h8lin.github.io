@@ -544,7 +544,22 @@ a {
     pointer-events: none;
     /* allows clicks to pass through, if it's just decorative */
   }
+
+    .menu:focus-within .menu-dropdown {
+    display: block;
+  }
+
+  /* Prevent menu from closing when link is tapped */
+  .menu-dropdown a {
+    pointer-events: auto;
+  }
+
+  /* Prevent losing focus when clicking inside menu */
+  .menu * {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
+
 
 
 /*Final CSS Cleaned Up with ChatGPT Prompt: "please consolidate and combine duplicates", then checked over before committing*/
