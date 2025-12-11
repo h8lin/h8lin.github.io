@@ -605,4 +605,99 @@ a {
 
 }
 
+/* ===== Top navigation menu (full working version) ===== */
+.top-nav {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  z-index: 2000;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: 0;
+  font-size: 16px;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Dropdown menu */
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--green);
+  border: 1px solid var(--green);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 12px;
+  min-width: 200px;
+  z-index: 2500;
+}
+
+/* Links inside dropdown */
+.menu-dropdown a {
+  display: block;
+  padding: 8px 10px;
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu-dropdown a:hover {
+  background: var(--bright);
+}
+
+/* Search box inside dropdown */
+.menu-dropdown .search-box input {
+  margin-top: 8px;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+}
+
+/* Show dropdown when <details> is open */
+.menu[open] .menu-dropdown {
+  display: block;
+}
+
+/* Mobile tweaks */
+@media (max-width: 1000px) {
+  .top-nav {
+    top: 16px;
+    right: 16px;
+  }
+
+  .menu > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    z-index: 2100;
+  }
+
+  .menu-dropdown {
+    top: 100%; /* position below summary */
+    right: 0;
+  }
+
+  .menu * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .logo-circle {
+    z-index: 1050; /* below menu but above banner */
+  }
+}
+
 /*Final CSS Cleaned Up with ChatGPT Prompt: "please consolidate and combine duplicates", then checked over before committing*/
