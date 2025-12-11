@@ -34,7 +34,8 @@
         </nav>
     </header>
     <!-- Logo image -->
-    <a href="https://h8lin.github.io/kb/kb.html"><img class="logo-circle" src="https://h8lin.github.io/kb/logo.png" alt="logo" /></a>
+    <a href="https://h8lin.github.io/kb/kb.html"><img class="logo-circle" src="https://h8lin.github.io/kb/logo.png"
+            alt="logo" /></a>
 
     <!--End page header-->
 
@@ -59,16 +60,24 @@
 
                     <p>Submit articles for entry or topic requests here:</p>
                     <form action="https://h8lin.github.io/kb/submit.html" method="post" class="contact-form">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required />
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div>
+                                <label for="message">Message:</label>
+                                <div class="textarea-container">
+                                    <textarea id="message" name="message" rows="6"></textarea>
+                                    <button type="submit"><a href="https://h8lin.github.io/kb/pages/thank-you.html">Submit</a></button>
+                                </div>
+                            </div>
 
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
 
-                        <a href="https://h8lin.github.io/kb/pages/thank-you.html" class="btn">Submit</a>
 
                     </form>
                 </div>
