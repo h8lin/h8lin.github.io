@@ -492,64 +492,33 @@ p {
 }
 
 /* Responsive adjustments + Mobile menu fix */
+/* MOBILE MENU FIX FOR PHONES */
 @media (max-width: 1000px) {
 
-  /* Grid adjustments */
-  .product-grid,
-  .article-grid {
-    grid-template-columns: 1fr !important;
-    gap: 40px !important;
-  }
-
-  .product-detail-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  /* Images full width */
-  img,
-  .product-image,
-  .product-image img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Full-width page content */
-  body,
-  .container,
-  .page-content,
-  .full-grid,
-  .about-wrapper,
-  .product-detail,
-  .product-grid,
-  .article,
-  main,
-  section {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    max-width: 100% !important;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-
-  /* MOBILE MENU FIX */
-  .menu > summary {
+  /* Menu container */
+  .menu {
     position: relative;
     z-index: 1000;
-    cursor: pointer;
   }
 
+  /* Menu button */
+  .menu > summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1100; /* above dropdown */
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Dropdown menu */
   .menu-dropdown {
     display: none;
     position: absolute;
     right: 0;
-    top: 38px;
+    top: 100%; /* below summary */
     background: var(--green);
     border: 1px solid var(--green);
     padding: 12px;
@@ -558,16 +527,26 @@ p {
     z-index: 1000;
   }
 
-  .menu:focus-within .menu-dropdown {
+  /* Show dropdown when menu is open */
+  .menu[open] .menu-dropdown {
     display: block;
   }
 
+  /* Links inside menu */
   .menu-dropdown a {
-    pointer-events: auto; /* ensures links are tappable */
     display: block;
+    padding: 8px 10px;
+    pointer-events: auto; /* tappable on mobile */
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 14px;
   }
 
-  /* Remove highlight on tap */
+  .menu-dropdown a:hover {
+    background: var(--bright);
+  }
+
+  /* Remove tap highlight for smoother mobile interaction */
   .menu * {
     -webkit-tap-highlight-color: transparent;
   }
