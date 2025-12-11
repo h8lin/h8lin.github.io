@@ -583,34 +583,32 @@ a {
     height: auto;
   }
 
-   .review-card .controls-row {
-    flex-direction: column;
-    gap: 16px; /* smaller gap between items */
+  .review-card .controls-row {
+    display: flex !important;  /* ensure flex applies */
+    flex-direction: column !important;
+    gap: 16px;
   }
 
-  /* Contact/Review Card Fixes */
-  .review-card .controls-row ul {
-    width: 100%;
-  }
-
+  .review-card .controls-row ul,
   .review-card .controls-row .contact-form {
-    width: 100%;
+    width: 100% !important;
   }
 
   .textarea-container {
-    flex-direction: column;
-    margin-right: 0;
+    flex-direction: column !important;
+    margin-right: 0 !important;
   }
 
   .textarea-container textarea {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 100% !important;
+    margin-bottom: 10px !important;
   }
 
   .textarea-container .btn {
-    width: auto;
-    align-self: flex-start;
+    width: auto !important;
+    align-self: flex-start !important;
   }
+
 }
 
 
