@@ -10,17 +10,18 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', system-ui, sans-serif;
-  margin: 0;
-  color: var(--dark);
-  background-color: var(--bg);
-}
-
+body,
 footer {
   font-family: 'Poppins', system-ui, sans-serif;
   margin: 0;
   color: var(--dark);
+}
+
+body {
+  background-color: var(--bg);
+}
+
+footer {
   font-size: x-small;
 }
 
@@ -50,7 +51,7 @@ footer {
   transition: width .18s ease, height .18s ease;
 }
 
-/* Top navigation menu */
+/* Top navigation */
 .top-nav {
   position: absolute;
   top: 18px;
@@ -65,10 +66,9 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
 }
 
-/* Dropdown menu */
+/* Dropdown Menu */
 .menu {
   position: relative;
   cursor: pointer;
@@ -112,18 +112,29 @@ footer {
   display: block;
 }
 
-/* Review submit button */
-.submit-button {
+/* Review submit + shared button styles */
+.submit-button,
+.btn,
+.textarea-container button,
+.thank-you-container .btn {
   background: var(--bright);
   color: #fff;
   border: 0;
-  padding: 8px 12px;
+  padding: 12px 18px;
   border-radius: 3px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  cursor: pointer;
 }
 
+.submit-button {
+  padding: 8px 12px;
+}
+
+.btn .arrow {
+  margin-left: 10px;
+}
+
+/* Textareas */
 textarea {
   width: 100%;
   height: 100px;
@@ -133,32 +144,7 @@ textarea {
   resize: vertical;
 }
 
-.textarea-container {
-  display: flex;
-  align-items: flex-start;
-}
-
-.textarea-container textarea {
-  flex: 1 1 auto;
-  margin-right: 3rem;
-  resize: vertical;
-}
-
-.textarea-container button {
-  background: var(--bright);
-  color: var(--bg);
-  border: 0;
-  padding: 12px 18px;
-  border-radius: 3px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.textarea-container button a {
-  color: var(--bg);
-}
-
-/* Product review cards */
+/* Review Cards */
 .product-review {
   display: flex;
   flex-direction: column;
@@ -166,7 +152,8 @@ textarea {
   padding: 80px 20px 160px;
 }
 
-.review-card {
+.review-card,
+.about-text {
   border: 1px solid var(--green);
   border-radius: 8px;
   padding: 20px;
@@ -201,7 +188,7 @@ h1 {
   padding: 20px;
 }
 
-/* Scroll Container for images */
+/* Scroll Container */
 .scroll-container {
   display: flex;
   overflow-x: auto;
@@ -221,7 +208,7 @@ h1 {
   display: block;
 }
 
-/* Product Grid */
+/* Product & Article Grid */
 .product-grid,
 .article-grid {
   display: grid;
@@ -254,25 +241,12 @@ h1 {
   margin-top: 8px;
 }
 
+/* Controls */
 .controls-row {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-top: 18px;
-}
-
-.btn {
-  background: var(--bright);
-  color: #fff;
-  border: 0;
-  padding: 12px 18px;
-  border-radius: 3px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.btn .arrow {
-  margin-left: 10px;
 }
 
 .qty {
@@ -299,7 +273,7 @@ h1 {
   font-size: 16px;
 }
 
-/* Product detail page */
+/* Product detail */
 .product-detail {
   padding: 40px 20px 120px;
 }
@@ -311,6 +285,7 @@ h1 {
   align-items: start;
 }
 
+/* Product Images */
 .product-image,
 .product-image img {
   width: 100%;
@@ -321,7 +296,7 @@ h1 {
   background-color: var(--green);
 }
 
-/* Carousel arrows */
+/* Carousel */
 .carousel {
   position: relative;
 }
@@ -356,14 +331,16 @@ h1 {
   right: 10px;
 }
 
-/* Article Body */
+/* Article */
 .article {
   padding: 3% 2% 6%;
   margin: 0 auto;
   color: var(--green);
 }
 
-.article p {
+.article p,
+.about-text p,
+p {
   color: var(--dark);
 }
 
@@ -372,7 +349,106 @@ h1 {
   text-align: center;
 }
 
-/* About Page */
+cite {
+  margin-right: 1%;
+}
+
+/* Image size presets */
+.product-image--small {
+  --product-image-max: 240px;
+}
+
+.product-image--medium {
+  --product-image-max: 420px;
+}
+
+.product-image--large {
+  --product-image-max: 720px;
+}
+
+/* Product Info */
+.product-info {
+  padding: 8px 0;
+}
+
+.product-title {
+  font-size: 28px;
+  margin: 0 0 8px;
+  color: var(--dark);
+}
+
+.product-price {
+  font-size: 20px;
+  color: var(--warm);
+  font-weight: 700;
+  margin: 8px 0 16px;
+}
+
+.product-description {
+  margin-bottom: 18px;
+  line-height: 1.4;
+  color: var(--dark);
+}
+
+.product-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.product-actions .qty-input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Contact Form */
+ul,
+a {
+  color: var(--warm);
+}
+
+.textarea-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.textarea-container textarea {
+  flex: 1 1 auto;
+  margin-right: 3rem;
+}
+
+.textarea-container button a {
+  color: var(--bg);
+  text-decoration: none;
+}
+
+/*Product Full Page Grid*/
+.full-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 20px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.full-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.full-description {
+  font-size: 14px;
+  color: var(--dark);
+  margin: 8px 16px;
+  flex-grow: 1;
+}
+
+/* About */
 .about-wrapper {
   max-width: 1360px;
   margin: 0 auto;
@@ -395,28 +471,7 @@ h1 {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.about-text h1 {
-  font-size: 26px;
-  letter-spacing: 1px;
-  color: var(--dark);
-  margin: 0 0 16px;
-}
-
-.about-text p {
-  font-size: 16px;
-  line-height: 1.55;
-  margin-bottom: 16px;
-  color: var(--dark);
-}
-
-.about-text {
-  border: 1px solid var(--green);
-  border-radius: 8px;
-  padding: 20px;
-  background: var(--green);
-}
-
-/* Thank you page */
+/* Thank You Page */
 .thank-you {
   display: flex;
   justify-content: center;
@@ -440,125 +495,64 @@ h1 {
   line-height: 1.6;
 }
 
-.thank-you-container .btn {
-  background: var(--bright);
-  color: #fff;
-  padding: 12px 24px;
-  font-weight: 700;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
 .thank-you-container .btn:hover {
   background: var(--warm);
 }
 
-/* Contact Form & Links */
-ul {
-  color: var(--dark);
-}
-
-a {
-  color: var(--warm);
-}
-
-p {
-  color: var(--dark);
-}
-
-/* Full page product grid */
-.full-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px 20px;
-  padding: 40px 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.full-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.full-description {
-  font-size: 14px;
-  color: var(--dark);
-  margin: 8px 16px;
-  flex-grow: 1;
-}
-
-/* Responsive adjustments + Mobile menu fix */
-/* MOBILE MENU FIX FOR PHONES */
-@media (max-width: 1000px) {
-
-  /* Menu container */
-  .menu {
-    position: relative;
-    z-index: 1000;
+/* Responsive */
+@media (max-width:1000px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
   }
 
-  /* Menu button */
-  .menu > summary {
-    list-style: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 1100; /* above dropdown */
-    user-select: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  .site-title {
+    font-size: 48px;
   }
 
-  /* Dropdown menu */
-  .menu-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%; /* below summary */
-    background: var(--green);
-    border: 1px solid var(--green);
-    padding: 12px;
-    min-width: 200px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    z-index: 1000;
+  .product-detail-grid {
+    grid-template-columns: 1fr;
   }
 
-  /* Show dropdown when menu is open */
-  .menu[open] .menu-dropdown {
-    display: block;
+  .product-image,
+  .product-image img {
+    max-width: 100%;
   }
 
-  /* Links inside menu */
-  .menu-dropdown a {
-    display: block;
-    padding: 8px 10px;
-    pointer-events: auto; /* tappable on mobile */
-    color: var(--dark);
-    text-decoration: none;
-    font-size: 14px;
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  body,
+  .container,
+  .page-content,
+  .full-grid,
+  .about-wrapper,
+  .product-detail,
+  .product-grid,
+  .article,
+  main,
+  section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
-  .menu-dropdown a:hover {
-    background: var(--bright);
+  .product-grid,
+  .article-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
   }
 
-  /* Remove tap highlight for smoother mobile interaction */
-  .menu * {
-    -webkit-tap-highlight-color: transparent;
+  img {
+    max-width: 100%;
+    height: auto;
   }
-
-  .logo-circle {
-  z-index: 1050; /* below menu button but above banner */
-}
 
 }
-
-
-
-
 
 /*Final CSS Cleaned Up with ChatGPT Prompt: "please consolidate and combine duplicates", then checked over before committing*/
