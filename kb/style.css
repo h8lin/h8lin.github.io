@@ -582,6 +582,35 @@ a {
     max-width: 100%;
     height: auto;
   }
+
+   .review-card .controls-row {
+    flex-direction: column;
+    gap: 16px; /* smaller gap between items */
+  }
+
+  /* Contact/Review Card Fixes */
+  .review-card .controls-row ul {
+    width: 100%;
+  }
+
+  .review-card .controls-row .contact-form {
+    width: 100%;
+  }
+
+  .textarea-container {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .textarea-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .textarea-container .btn {
+    width: auto;
+    align-self: flex-start;
+  }
 }
 
 
