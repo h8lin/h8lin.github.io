@@ -53,9 +53,12 @@ footer {
 
 /* Top navigation */
 .top-nav {
-  position: absolute;
+  position: fixed;
+  /* ← this is the important change */
   top: 18px;
   right: 24px;
+  z-index: 9999;
+  /* ← ensures it stays tappable */
 }
 
 .menu-btn {
@@ -529,11 +532,7 @@ a {
     text-align: center;
   }
 
-  .top-nav,
-  .menu-dropdown {
-    position: relative;
-    z-index: 9999; /* high value to ensure on top */
-  }
+
 
   /* If you have an overlay element when menu opens — detect and lower it */
   .menu-overlay,
@@ -542,7 +541,8 @@ a {
   .mobile-menu-overlay {
     position: fixed;
     z-index: 1;
-    pointer-events: none; /* allows clicks to pass through, if it's just decorative */
+    pointer-events: none;
+    /* allows clicks to pass through, if it's just decorative */
   }
 }
 
