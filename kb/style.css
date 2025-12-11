@@ -411,6 +411,32 @@ p {
   color: var(--dark)
 }
 
+.textarea-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.textarea-container textarea {
+  flex: 1 1 auto;
+  margin-right: 1rem;
+  resize: vertical;
+}
+
+.textarea-container button {
+  background: var(--bright);
+  color: var(--bg);
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.5px
+}
+
+.textarea-container button a {
+  color: var(--bg);
+
+}
+
 /*Product Full Page Grid*/
 .full-grid {
   display: grid;
@@ -474,7 +500,8 @@ p {
   margin-bottom: 16px;
   color: var(--dark);
 }
-.about-text{
+
+.about-text {
   border: 1px solid var(--green);
   border-radius: 8px;
   padding: 20px;
