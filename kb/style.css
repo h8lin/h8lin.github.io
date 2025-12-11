@@ -51,11 +51,12 @@ footer {
   transition: width .18s ease, height .18s ease;
 }
 
-/* Top navigation */
+/* ===== Top navigation menu (REWRITTEN) ===== */
 .top-nav {
   position: absolute;
   top: 18px;
   right: 24px;
+  z-index: 2000;
 }
 
 .menu-btn {
@@ -66,9 +67,10 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
-/* Dropdown Menu */
+/* Dropdown menu container */
 .menu {
   position: relative;
   cursor: pointer;
@@ -81,25 +83,28 @@ footer {
   top: 38px;
   background: var(--green);
   border: 1px solid var(--green);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   padding: 12px;
   min-width: 200px;
   z-index: 2500;
-  cursor: pointer;
+  pointer-events: auto; /* allow clicks/taps */
 }
 
+/* Links inside dropdown */
 .menu-dropdown a {
   display: block;
   padding: 8px 10px;
   color: var(--dark);
   text-decoration: none;
   font-size: 14px;
+  pointer-events: auto; /* ensure tappable on mobile */
 }
 
 .menu-dropdown a:hover {
   background: var(--bright);
 }
 
+/* Search box inside dropdown */
 .menu-dropdown .search-box input {
   margin-top: 8px;
   width: 100%;
@@ -108,8 +113,53 @@ footer {
   border-radius: 4px;
 }
 
-.menu:focus-within .menu-dropdown {
+/* Show dropdown when parent <details> is focused or open */
+.menu:focus-within .menu-dropdown,
+.menu[open] .menu-dropdown {
   display: block;
+}
+
+/* ===== Mobile-specific fixes ===== */
+@media (max-width: 1000px) {
+  .top-nav {
+    top: 16px;
+    right: 16px;
+  }
+
+  /* Ensure <details> summary works correctly on mobile */
+  .menu > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    z-index: 2100; /* above dropdown */
+  }
+
+  .menu-dropdown {
+    top: 100%; /* dropdown below summary */
+    right: 0;
+    display: none;
+    pointer-events: auto;
+  }
+
+  /* Show dropdown when details is open */
+  .menu[open] .menu-dropdown {
+    display: block;
+  }
+
+  .menu-dropdown a {
+    pointer-events: auto;
+  }
+
+  .menu * {
+    -webkit-tap-highlight-color: transparent; /* smoother mobile taps */
+  }
+
+  .logo-circle {
+    z-index: 1050; /* below menu button but above banner */
+  }
 }
 
 /* Review submit + shared button styles */
