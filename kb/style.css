@@ -501,6 +501,11 @@ a {
 
 /* Responsive */
 @media (max-width:1000px) {
+  body {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
@@ -524,6 +529,22 @@ a {
     text-align: center;
   }
 
+  .top-nav,
+  .menu-dropdown {
+    position: relative;
+    z-index: 9999; /* high value to ensure on top */
+  }
+
+  /* If you have an overlay element when menu opens — detect and lower it */
+  .menu-overlay,
+  .overlay,
+  .nav-overlay,
+  .mobile-menu-overlay {
+    position: fixed;
+    z-index: 1;
+    pointer-events: none; /* allows clicks to pass through, if it's just decorative */
+  }
 }
+
 
 /*Final CSS Cleaned Up with ChatGPT Prompt: "please consolidate and combine duplicates", then checked over before committing*/
