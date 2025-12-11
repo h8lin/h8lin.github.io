@@ -551,6 +551,10 @@ p {
     -webkit-tap-highlight-color: transparent;
   }
 
+  .logo-circle {
+  z-index: 1050; /* below menu button but above banner */
+}
+
 }
 
 
