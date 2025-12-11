@@ -503,28 +503,16 @@ a {
 }
 
 /* Responsive */
-@media (max-width:1000px) {
-  body {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+@media (max-width: 1000px) {
 
+  /* GRID ADJUSTMENTS */
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 
-  .site-title {
-    font-size: 48px;
-  }
-
   .product-detail-grid {
     grid-template-columns: 1fr;
-  }
-
-  .product-image,
-  .product-image img {
-    max-width: 100%;
   }
 
   .about-grid {
@@ -532,33 +520,68 @@ a {
     text-align: center;
   }
 
-
-
-  /* If you have an overlay element when menu opens — detect and lower it */
-  .menu-overlay,
-  .overlay,
-  .nav-overlay,
-  .mobile-menu-overlay {
-    position: fixed;
-    z-index: 1;
-    pointer-events: none;
-    /* allows clicks to pass through, if it's just decorative */
+  /* IMAGES */
+  img,
+  .product-image,
+  .product-image img {
+    max-width: 100%;
+    height: auto;
   }
 
-    .menu:focus-within .menu-dropdown {
+  /* FULL-WIDTH CONTENT ON MOBILE */
+  body,
+  .container,
+  .page-content,
+  .full-grid,
+  .about-wrapper,
+  .product-detail,
+  .product-grid,
+  .article,
+  main,
+  section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  /* 1-COLUMN FOR NARROW GRIDS */
+  .product-grid,
+  .article-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* PREVENT SUMMARY FROM COVERING DROPDOWN (CRITICAL FIX) */
+  .menu > summary {
+    position: relative;
+    z-index: 1000; /* Keep button above */
+  }
+
+  .dropdown-wrapper {
+    position: relative;
+    z-index: 1; /* Keep dropdown links above summary hit area */
+  }
+
+  /* MENU APPEARANCE */
+  .menu:focus-within .menu-dropdown {
     display: block;
   }
 
-  /* Prevent menu from closing when link is tapped */
+  /* Make links fully tappable */
   .menu-dropdown a {
     pointer-events: auto;
   }
 
-  /* Prevent losing focus when clicking inside menu */
+  /* Better tap behavior on iOS */
   .menu * {
     -webkit-tap-highlight-color: transparent;
   }
 }
+
 
 
 
