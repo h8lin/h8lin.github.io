@@ -349,6 +349,10 @@ p {
   text-align: center;
 }
 
+cite {
+  margin-right: 1%;
+}
+
 /* Image size presets */
 .product-image--small {
   --product-image-max: 240px;
