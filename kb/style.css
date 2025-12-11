@@ -495,9 +495,10 @@ p {
 @media (max-width: 1000px) {
 
   /* Grid adjustments */
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+  .product-grid,
+  .article-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
   }
 
   .product-detail-grid {
@@ -515,13 +516,6 @@ p {
   .product-image img {
     max-width: 100%;
     height: auto;
-  }
-
-  /* 1-column for narrow grids */
-  .product-grid,
-  .article-grid {
-    grid-template-columns: 1fr !important;
-    gap: 40px !important;
   }
 
   /* Full-width page content */
@@ -551,9 +545,17 @@ p {
     cursor: pointer;
   }
 
-  .dropdown-wrapper {
-    position: relative;
-    z-index: 1;
+  .menu-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    background: var(--green);
+    border: 1px solid var(--green);
+    padding: 12px;
+    min-width: 200px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    z-index: 1000;
   }
 
   .menu:focus-within .menu-dropdown {
@@ -561,12 +563,15 @@ p {
   }
 
   .menu-dropdown a {
-    pointer-events: auto;
+    pointer-events: auto; /* ensures links are tappable */
+    display: block;
   }
 
+  /* Remove highlight on tap */
   .menu * {
     -webkit-tap-highlight-color: transparent;
   }
+
 }
 
 
